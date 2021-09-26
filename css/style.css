@@ -17,7 +17,10 @@ body {
   color: #000000;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 h1 {
@@ -50,7 +53,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: #471852;
+  color: #FA4C98;
 }
 a:hover,
 a:focus {
@@ -73,11 +76,7 @@ a:active {
   transition: 0.2s opacity;
 }
 .button:hover,
-.button:focus {
-  background-color: #FA4C98;
-  color: #ffffff;
-  text-decoration: none;
-}
+.button:focus,
 .button:active {
   background-color: #FA4C98;
   color: #ffffff;
@@ -91,10 +90,7 @@ a:active {
   border: 2px solid #009FFD;
 }
 .button.contact:hover,
-.button.contact:focus {
-  background-color: #009FFD;
-  color: #ffffff;
-}
+.button.contact:focus,
 .button.contact:active {
   background-color: #009FFD;
   color: #ffffff;
@@ -107,10 +103,7 @@ a:active {
   border: 2px solid #FA4C98;
 }
 .button.resume:hover,
-.button.resume:focus {
-  background-color: #FA4C98;
-  color: #ffffff;
-}
+.button.resume:focus,
 .button.resume:active {
   background-color: #FA4C98;
   color: #ffffff;
