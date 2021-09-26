@@ -4,11 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Valentin Plessy - UI/UX Designer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.png" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,900;1,200&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header>
+<body id="home">
+  <header id="header">
     <div>
       <img src="img/logo.svg" alt="Logo Valentin Plessy UX designer">
       <nav>
@@ -20,15 +24,18 @@
       </nav>
     </div>
   </header>
+
   <main>
-    <div>
+    <!--hero-->
+    <div id="welcome">
       <div>
         <h1> Hi, I'm Valentin Plessy <span> Berlin based UI/UX designer </span> </h1>
         <p> With an eye for details, and a passion for graphic design and psychology,
           I love turning problems into beautiful and intuitive solutions. </p>
       </div>
     </div>
-    <div>
+    <!--my work-->
+    <div id="work">
       <div>
         <h2> My work </h2>
         <div>
@@ -43,14 +50,14 @@
             <p>
               Design and branding of an 80s music player app.
             </p>
-            <a href="flashback.html">view project</a>
+            <a href="flashback.html" class="button">view project</a>
           </div>
         </div>
         <div>
           <div>
             <picture>
               <source srcset="img/bazaar/bazaar_tn@1x.png" media="(max-width:767px)">
-              <img src="img/bazaar/bazaar_tn@2x.png" alt="My Image">
+              <img src="img/bazaar/bazaar_tn@2x.png" alt="Bazaar - Native iOS and Android app">
             </picture>
           </div>
           <div>
@@ -58,14 +65,14 @@
             <p>
               Design and branding of an e-commerce based native app.
             </p>
-            <a href="bazaar.html">view project</a>
+            <a href="bazaar.html" class="button">view project</a>
           </div>
         </div>
         <div>
           <div>
             <picture>
               <source srcset="img/pennywise/pennywise_tn@1x.png" media="(max-width:767px)">
-              <img src="img/pennywise/pennywise_tn@2x.png" alt="My Image">
+              <img src="img/pennywise/pennywise_tn@2x.png" alt="Pennywise - Money-saving native app">
             </picture>
           </div>
           <div>
@@ -73,14 +80,14 @@
             <p>
               Design and branding of a money saving tool, native iOS app.
             </p>
-            <a href="pennywise.html">view project</a>
+            <a href="pennywise.html" class="button">view project</a>
           </div>
         </div>
         <div>
           <div>
             <picture>
-              <source srcset="img/ltec!/ltec!_tn@1x.png" media="(max-width:767px)">
-              <img src="img/pennywise/ltec!_tn@2x.png" alt="My Image">
+              <source srcset="img/ltec/ltec_tn@1x.png" media="(max-width:767px)">
+              <img src="img/ltec/ltec_tn@2x.png" alt="Let Them Eat Cake! - Responsive web app for recipes">
             </picture>
           </div>
           <div>
@@ -88,7 +95,7 @@
             <p>
               Design and branding of a responsive web app for French desserts and pastries recipe.
             </p>
-            <a href="letthemeatcake.html">view project</a>
+            <a href="letthemeatcake.html" class="button">view project</a>
           </div>
         </div>
       </div>
@@ -101,7 +108,7 @@
         Want to collaborate or discuss my work? Feel free to call: <a href="tel:+4917681182670">+49 176 81182670</a>, or send an email.
       </p>
       <div>
-        <a href="mailto:valplessy@gmail.com">send email</a>
+        <a href="mailto:valplessy@gmail.com" class="button contact">send email</a>
       </div>
       <div>
         <a href="https://www.linkedin.com/in/valentin-plessy" target="_blank">
