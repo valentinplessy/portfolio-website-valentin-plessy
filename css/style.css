@@ -6,6 +6,9 @@ Primary Color   (Yellow): #FFDB1F;
 Secondary Color (Purple): #471852;
                 (Black): #000000;
 */
+* {
+  box-sizing: border-box;
+}
 
 /* typography */
 body {
@@ -21,24 +24,26 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1.4;
+  line-height: 1;
 }
+
 h1 {
-  font-size: 2.75em;
+  font-size: 3em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.75em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 2em;
   font-weight: 700;
 }
+
 h4 {
-  font-size: 1.35em;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -48,33 +53,260 @@ img {
 }
 
 /* hyperlink */
-a {
+a,
+a:visited {
   color: #009FFD;
   text-decoration: none;
 }
-a:visited {
-  color: #FA4C98;
-}
+
 a:hover,
 a:focus {
   color: #FA4C98;
   text-decoration: underline;
 }
+
 a:active {
   color: #FA4C98;
+}
+
+/* Layout styling */
+header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 11px 17px 0px rgba(50, 50, 50, 0.49);
+}
+
+main {
+  padding-top: 105px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a,
+a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #009FFD;
+}
+
+nav>ul>li>a:hover,
+a:focus {
+  color: #FA4C98;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  color: #FA4C98;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption {
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: #ffe354;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+}
+
+#contact {
+  display: inline-block;
+  padding: 20px 0;
+  width: 100%;
+}
+
+#contact h3,
+#contact p {
+  text-align: center;
+}
+
+#contact svg {
+  display:inline-block;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+#social {
+  display: inline-block;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+/* index */
+#work .row {
+  padding-bottom: 25px;
+}
+
+#hero {
+  display: inline-block;
+  background-color: #ffe354;
+  padding: 20px 0;
+  width: 100%;
+}
+
+#hero h1,
+#hero p {
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+/* about */
+#about-me .container {
+  display: inline-block;
+}
+#about-me h1 {
+  text-align: center;
+}
+#about-me img {
+  max-width: 500px;
+}
+
+/* flashback */
+
+#flashback h1,
+#flashback h2 {
+  background: -webkit-linear-gradient(#FFDB1F, #FA4C98);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#flashback h3 {
+  background: -webkit-linear-gradient(#FA4C98, #009FFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#fb-intro {
+  text-align: center;
+  background-color: #211C36;
+  padding: 20px 0;
+  width: 100%;
+}
+#fb-intro h1 {
+  text-align: center;
+  color: #FFDB1F;
+}
+#fb-intro img {
+  display: inline-block;
+  max-width: 500px;
+  margin: 20px;
+}
+
+#fb-menu {
+  display: inline-block;
+  text-align: center;
+  background-color: #211C36;
+  width: 100%;
+}
+#fb-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+#fb-menu ul>li {
+  display: inline-block;
+}
+#fb-menu ul>li>a,
+a:visited {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #009FFD;
+}
+#fb-menu h3 {
+  display: inline-block;
+  margin: 20px;
+}
+#fb-menu ul>li>a:hover,
+a:focus {
+  color: #FA4C98;
+  text-decoration: underline;
+}
+#fb-menu ul>li>a:active {
+  color: #FA4C98;
+}
+
+#fb-process {
+  display: inline-block;
+  background-color: #211C36;
+  width: 100%;
+}
+#fb-process img {
+  display: inline-block;
+  max-width: 900px;
+  margin: 20px;
+}
+#fb-process,
+#fb-inspiration p {
+  color: #ffffff;
+}
+
+#fb-wireframes {
+  display: inline-block;
+}
+#fb-wireframes img {
+  display: inline-block;
+}
+
+#fb-inspiration {
+  display: inline-block;
+  background-color: #211C36;
+  width: 100%;
+}
+#fb-inspiration img {
+  display: inline-block;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 /* buttons */
 .button {
   display: inline-block;
-  background-color: #FFDB1F;
+  background-color: #ffe354;
   color: #FA4C98;
   font-size: 1.35em;
   font-weight: 700;
   padding: 12px;
+  margin: 15px 0;
   border-radius: 3px;
   transition: 0.2s opacity;
 }
+
 .button:hover,
 .button:focus,
 .button:active {
@@ -89,6 +321,7 @@ a:active {
   text-transform: uppercase;
   border: 2px solid #009FFD;
 }
+
 .button.contact:hover,
 .button.contact:focus,
 .button.contact:active {
@@ -102,6 +335,7 @@ a:active {
   text-transform: uppercase;
   border: 2px solid #FA4C98;
 }
+
 .button.resume:hover,
 .button.resume:focus,
 .button.resume:active {
