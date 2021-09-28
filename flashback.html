@@ -13,10 +13,10 @@
 
 <body id="flashback">
   <header id="header">
-    <div>
-      <img src="img/logo.svg" alt="Logo Valentin Plessy UX designer">
+    <div class="container">
+      <img class="logo" src="img/logo.svg" alt="Logo Valentin Plessy">
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -28,11 +28,11 @@
   <main>
     <!-- Intro -->
     <div id="fb-intro">
-      <div>
-        <h1> Flashback </h1>
+      <div  class="container">
+        <h1> FLASHBACK </h1>
         <picture>
           <source srcset="img/flashback/1_fb_logo@1x.png" media="(max-width:767px)">
-          <img src="img/flashback/1_fb_logo@2x.png" alt="Flashback - 80s music player app">
+          <img src="img/flashback/1_fb_logo@2x.png" alt="Flashback - 80s music player app" class="center">
         </picture>
         <picture>
           <source srcset="img/flashback/2_fb_mockups@1x.png" media="(max-width:767px)">
@@ -41,19 +41,19 @@
       </div>
     </div>
     <!-- Menu -->
-    <div id="flashback-menu">
-      <div>
-        <ul>
-          <li><a href="#challenge">Challenge</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#finaldesigns">Final Designs</a></li>
-          <li><a href="#retrospective">Retrospective</a></li>
+    <div id="fb-menu">
+      <div  class="container">
+        <ul class="navigation">
+          <li><a href="#fb-challenge"><h3>Challenge</h3></a></li>
+          <li><a href="#fb-process"><h3>Process</h3></a></li>
+          <li><a href="#fb-final-designs"><h3>Final Designs</h3></a></li>
+          <li><a href="#fb-retrospective"><h3>Retrospective</h3></a></li>
         </ul>
       </div>
     </div>
     <!-- Challenge -->
     <div id="fb-challenge">
-      <div>
+      <div class="container">
         <h2> CHALLENGE </h2>
         <!-- columns -->
         <div>
@@ -66,23 +66,23 @@
           </div>
           <!-- column 2 -->
           <div>
-            <iframe src="https://vimeo.com/592821327?autoplay=1&loop=1&autopause=1&autopause=0" width="360" height="448" frameborder="0" allow="autoplay ; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://vimeo.com/592821327?autoplay=1&loop=1&autopause=1&autopause=0" width="300" height="373" frameborder="0" allow="autoplay ; fullscreen" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
     <!-- Process -->
     <div id="fb-process">
-      <div>
+      <div class="container">
         <h2> PROCESS </h2>
         <picture>
           <source srcset="img/flashback/3_fb_process@1x.png" media="(max-width:767px)">
           <img src="img/flashback/3_fb_process@2x.png" alt="Flashback - Design Thinking Process">
         </picture>
         <p> The design thinking approach guaranteed user-centric solutions throughout the different steps of the project. </p>
-        <h2> COMPETITIVE ANALYSIS AND USER RESEARCH </h2>
+        <h3> COMPETITIVE ANALYSIS AND USER RESEARCH </h3>
         <!-- columns -->
-        <div>
+        <div class="row">
           <!-- column 1 -->
           <div>
             <picture>
@@ -106,7 +106,7 @@
           </div>
         </div>
         <!-- columns -->
-        <div>
+        <div class="row">
           <!-- column 1 -->
           <div>
             <p> I thought of a third one when talking to music enthusiasts. They were
@@ -125,6 +125,11 @@
           </div>
         </div>
         <p> With these functionalities in mind, I started ideating and worked on wireframes. </p>
+      </div>
+    </div>
+    <!-- wireframes -->
+    <div id="fb-wireframes">
+      <div class="container">
         <h3> WIREFRAMES, PROTOTYPING & USABILITY TESTING </h3>
         <picture>
           <source srcset="img/flashback/7.1_fb_low_fid@1x.png" media="(max-width:767px)">
@@ -153,9 +158,14 @@
         <p> During usability tests, I was thrilled to observe no pain points as
           testers navigated the app: they achieved their goals with great ease
           and enjoyed the extra functionalities. </p>
-        <h3> INSPIRATION BOARD, BRANDING & ICONOGRAPHY </h3>
+        </div>
+      </div>
+      <!-- inspiration board -->
+      <div id="fb-inspiration">
+        <div class="container">
+        <h3> INSPIRATION BOARD & BRANDING </h3>
         <!-- columns -->
-        <div>
+        <div class="row">
           <!-- column 1 -->
           <div>
             <p> Wireframes, user-flows, and usability tests done, I gathered ideas
@@ -174,6 +184,7 @@
           <source srcset="img/flashback/9_fb_board@1x.png" media="(max-width:767px)">
           <img src="img/flashback/9_fb_board@2x.png" alt="Flashback - Inspiration Board">
         </picture>
+        <h3> ICONONGRAPHY </h3>
         <picture>
           <source srcset="img/flashback/10_fb_icons@1x.png" media="(max-width:767px)">
           <img src="img/flashback/10_fb_icons@2x.png" alt="Flashback - Iconography">
@@ -184,44 +195,44 @@
     </div>
     <!-- Final Design -->
     <div id="fb-final-designs">
-      <div>
+      <div class="container">
         <h2> FINAL DESIGNS </h2>
         <p> Once the UI style guide was achieved, I perfected the logo and finalized
           my designs into a minimal yet colourful homage to the tubular decade of the 80s! </p>
         <p> You can view the full prototype <a href="https://marvelapp.com/prototype/2b0i7j76/screen/81368202">here</a></p>
-        <p> Login or create your new account efficiently </p>
+        <p class="caption"> Login or create your new account efficiently </p>
         <picture>
           <source srcset="img/flashback/11.1_fb_final@1x.png" media="(max-width:767px)">
           <img src="img/flashback/11.1_fb_final@2x.png" alt="Flashback - Final Designs">
         </picture>
-        <p> Customize your profile and get personalized suggestions </p>
+        <p class="caption"> Customize your profile and get personalized suggestions </p>
         <picture>
           <source srcset="img/flashback/11.2_fb_final@1x.png" media="(max-width:767px)">
           <img src="img/flashback/11.2_fb_final@2x.png" alt="Flashback - Final Designs">
         </picture>
-        <p> Easily access the settings of your account and find all 80s music with our
+        <p class="caption"> Easily access the settings of your account and find all 80s music with our
           intelligent search engine </p>
         <picture>
           <source srcset="img/flashback/11.3_fb_final@1x.png" media="(max-width:767px)">
           <img src="img/flashback/11.3_fb_final@2x.png" alt="Flashback - Final Designs">
         </picture>
-        <p> Learn about artists and access all of their music </p>
+        <p class="caption"> Learn about artists and access all of their music </p>
         <picture>
           <source srcset="img/flashback/11.4_fb_final@1x.png" media="(max-width:767px)">
           <img src="img/flashback/11.4_fb_final@2x.png" alt="Flashback - Final Designs">
         </picture>
-        <p> Enjoy our minimal and colourful player and access your history, playlists
+        <p class="caption"> Enjoy our minimal and colourful player and access your history, playlists
           and the music you favourited </p>
         <picture>
           <source srcset="img/flashback/11.5_fb_final@1x.png" media="(max-width:767px)">
           <img src="img/flashback/11.5_fb_final@2x.png" alt="Flashback - Final Designs">
         </picture>
-        <p> Access and create your playlists </p>
+        <p class="caption"> Access and create your playlists </p>
         <picture>
           <source srcset="img/flashback/11.6_fb_final@1x.png" media="(max-width:767px)">
           <img src="img/flashback/11.6_fb_final@2x.png" alt="Flashback - Final Designs">
         </picture>
-        <p> Manage your playlists </p>
+        <p class="caption"> Manage your playlists </p>
         <picture>
           <source srcset="img/flashback/11.7_fb_final@1x.png" media="(max-width:767px)">
           <img src="img/flashback/11.7_fb_final@2x.png" alt="Flashback - Final Designs">
@@ -234,10 +245,10 @@
     </div>
     <!-- section 6 -->
     <div id="fb-retrospective">
-      <div>
+      <div class="container">
         <h2> RETROSPECTIVE </h2>
         <!-- columns -->
-        <div>
+        <div class="row">
           <!-- column 1 -->
           <div>
             <p> Flashback was my very first UX/UI design project and it all went pretty
@@ -264,7 +275,7 @@
   </main>
 
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2> Let's talk </h2>
       <p>
         Want to collaborate or discuss my work? Feel free to call: <a href="tel:+4917681182670">+49 176 81182670</a>, or send an email.
