@@ -231,8 +231,7 @@ footer {
 #fb-intro img {
   display: inline-block;
   max-width: 500px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 20px 0;
 }
 
 #fb-menu {
@@ -295,8 +294,7 @@ a:focus {
 }
 #fb-process img {
   max-width: 900px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 #fb-process .row {
   display: inline-block;
@@ -314,8 +312,7 @@ a:focus {
 }
 #fb-competitive img {
   max-width: 900px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 #fb-wireframes {
@@ -342,8 +339,7 @@ a:focus {
 #fb-inspiration img {
   display: inline-block;
   max-width: 900px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 #fb-final-designs {
