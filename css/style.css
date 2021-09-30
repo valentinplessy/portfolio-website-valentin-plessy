@@ -168,10 +168,6 @@ footer {
 }
 
 /* index */
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 0.5px solid #000000;
-}
 
 #hero {
   display: inline-block;
@@ -187,6 +183,13 @@ footer {
   display: block;
 }
 
+#work {
+  text-align: center;
+}
+#work .row {
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid #000000;
+}
 #work img {
   display: inline-block;
   max-width: 600px;
@@ -205,6 +208,17 @@ footer {
 
 /* flashback */
 
+#flashback header {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 11px 17px 0px rgba(50, 50, 50, 0.49);
+}
+#flashback main {
+  padding-top: 0px;
+}
 #flashback h1,
 #flashback h2 {
   background: -webkit-linear-gradient(#FFDB1F, #FA4C98);
