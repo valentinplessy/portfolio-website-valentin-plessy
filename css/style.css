@@ -28,17 +28,17 @@ h4 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.25em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.75em;
+  font-size: 2em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
@@ -170,6 +170,7 @@ footer {
 /* index */
 #work .row {
   padding-bottom: 25px;
+  border-bottom: 0.5px solid #000000;
 }
 
 #hero {
@@ -178,14 +179,17 @@ footer {
   padding: 20px 0;
   width: 100%;
 }
-
 #hero h1,
 #hero p {
   text-align: center;
 }
-
 #hero span {
   display: block;
+}
+
+#work img {
+  display: inline-block;
+  max-width: 600px;
 }
 
 /* about */
@@ -216,7 +220,8 @@ footer {
 #fb-intro {
   text-align: center;
   background-color: #211C36;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
 }
 #fb-intro h1 {
@@ -226,7 +231,8 @@ footer {
 #fb-intro img {
   display: inline-block;
   max-width: 500px;
-  margin: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #fb-menu {
@@ -250,7 +256,8 @@ a:visited {
 }
 #fb-menu h3 {
   display: inline-block;
-  margin: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #fb-menu ul>li>a:hover,
 a:focus {
@@ -260,39 +267,115 @@ a:focus {
 #fb-menu ul>li>a:active {
   color: #FA4C98;
 }
+#fb-menu img {
+  display: inline-block;
+  max-width: 700px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+#fb-challenge {
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 #fb-process {
   display: inline-block;
   background-color: #211C36;
   width: 100%;
-}
-#fb-process img {
-  display: inline-block;
-  max-width: 900px;
-  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #fb-process,
-#fb-inspiration p {
+#fb-inspiration,
+#fb-competitive p {
   color: #ffffff;
+}
+#fb-process img {
+  max-width: 900px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#fb-process .row {
+  display: inline-block;
+  width: 100%;
+}
+#fb-competitive {
+  display: inline-block;
+  background-color: #211C36;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#fb-competitive li {
+  color: #ffffff;
+}
+#fb-competitive img {
+  max-width: 900px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #fb-wireframes {
   display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #fb-wireframes img {
   display: inline-block;
+}
+#fb-wireframes .mid-fid img{
+  display: inline-block;
+  width: 90%;
 }
 
 #fb-inspiration {
   display: inline-block;
   background-color: #211C36;
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #fb-inspiration img {
   display: inline-block;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 900px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+#fb-final-designs {
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#fb-final-designs img {
+  display: inline-block;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+#fb-final-designs .fb-mockups {
+  display: inline-block;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+#fb-retrospective {
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+}
+#fb-retrospective img {
+  display: inline-block;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
 
 /* buttons */
 .button {
