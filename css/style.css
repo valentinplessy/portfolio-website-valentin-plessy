@@ -24,7 +24,7 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1;
+  line-height: 1.1;
 }
 
 h1 {
@@ -80,7 +80,7 @@ header {
 }
 
 main {
-  padding-top: 105px;
+  padding-top: 90px;
 }
 
 nav {
@@ -91,6 +91,7 @@ nav {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 nav>ul>li {
@@ -131,6 +132,10 @@ nav>ul>li>a:active {
 
 .caption {
   text-align: center;
+}
+
+.phone {
+  white-space: nowrap;
 }
 
 /* footer */
@@ -181,19 +186,22 @@ footer {
 }
 #hero span {
   display: block;
+  margin-top: 15px;
 }
 
-#work {
-  text-align: center;
-}
+
 #work .row {
   padding-bottom: 20px;
-  border-bottom: 0.5px solid #000000;
 }
 #work img {
   display: inline-block;
-  max-width: 600px;
+  max-width: 400px;
 }
+#work h3 {
+  margin-top: 2;
+  margin-bottom: 0;
+}
+
 
 /* about */
 #about-me .container {
@@ -208,19 +216,9 @@ footer {
 
 /* flashback */
 
-#flashback header {
-  background-color: #FFFFFF;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  width: 100%;
-  box-shadow: 0px 11px 17px 0px rgba(50, 50, 50, 0.49);
-}
-#flashback main {
-  padding-top: 0px;
-}
+
 #flashback h1,
-#flashback h2 {
+#flashback h2:not(footer h2){
   background: -webkit-linear-gradient(#FFDB1F, #FA4C98);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -386,13 +384,13 @@ a:focus {
   margin-top: 20px;
 }
 
-
 /* buttons */
-.button {
+.button,
+.button:visited {
   display: inline-block;
   background-color: #ffe354;
   color: #FA4C98;
-  font-size: 1.35em;
+  font-size: 1em;
   font-weight: 700;
   padding: 12px;
   margin: 15px 0;
@@ -425,7 +423,6 @@ a:focus {
 .button.resume {
   background-color: transparent;
   color: #FA4C98;
-  text-transform: uppercase;
   border: 2px solid #FA4C98;
 }
 
@@ -434,4 +431,80 @@ a:focus {
 .button.resume:active {
   background-color: #FA4C98;
   color: #ffffff;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+h2, h3, h4, p {
+  padding: 0 20px;
+}
+
+.button {
+  margin-left: 20px;
+}
+
+body {
+  font-size: 18px;
+}
+
+.logo {
+  margin-bottom: 0;
+}
+
+nav {
+ width: auto;
+ float: right;
+}
+
+main {
+  padding-top: 61.59px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about h3 {
+  margin-top: 0;
+}
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
