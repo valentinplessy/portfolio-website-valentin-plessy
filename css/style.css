@@ -116,13 +116,11 @@ nav>ul>li>a:active {
   color: #FA4C98;
 }
 
-/* nav animation */
-
 .logo {
   max-width: 250px;
 }
 
-
+/* nav animation */
 header div.container a {
     text-decoration: none;
     color: #000000;
@@ -133,7 +131,6 @@ header div.container a {
     cursor: pointer;
 }
 
-/* nav animation */
 .navigation a:before, .navigation a:after {
     position: absolute;
     left: 0px;
@@ -298,6 +295,7 @@ footer {
   font-size: 1.2em;
   margin-left: 20px;
 }
+
 
 /* flashback */
 #flashback h1,
