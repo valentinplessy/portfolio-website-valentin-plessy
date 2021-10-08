@@ -12,6 +12,28 @@
 </head>
 
 <body id="flashback">
+
+  <button onclick="topFunction()" id="back-up-button" title="Go to top"> ↑ top</button>
+  <script>
+    var mybutton = document.getElementById("back-up-button");
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 650;
+      document.documentElement.scrollTop = 650;
+    }
+  </script>
+
   <header id="header">
     <div class="container">
       <a href="index.html"><img class="logo" src="img/logoblack.svg" alt="Logo Valentin Plessy"></a>
@@ -27,7 +49,7 @@
 
   <main>
     <!-- Intro -->
-    <div id="fb-intro">
+    <div class="section" id="fb-intro">
       <div class="container">
         <svg width="1200px" height="218px" viewBox="0 0 1200 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g id="flashback" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -68,27 +90,27 @@
       </div>
     </div>
     <!-- Challenge -->
-    <div id="fb-challenge">
+    <div class="section" id="fb-challenge">
       <div class="container">
         <h2> CHALLENGE </h2>
         <!-- columns -->
-        <div class="project-row">
+        <div class="row">
           <!-- column 1 -->
           <div class="col-md-6">
             <p> Music player mobile apps are numerous but few are specialised in a specific music era. I was asked to design one for 80s music lovers and define the direction that will work for the branding and digital UI.</p>
-            <p> You can view the full prototype <a href="https://marvelapp.com/prototype/2b0i7j76/screen/81368202">here</a></p>
+            <p> You can view the full prototype <a href="https://marvelapp.com/prototype/2b0i7j76/screen/81368202">here.</a></p>
           </div>
           <!-- column 2 -->
           <div class="col-md-6">
-            <div style="padding:124.57% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592821327?h=afd5a8b1cc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Flashback - Mobile app prototype"></iframe></div>
+            <div style="padding:124.57% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592821327?h=afd5a8b1cc&amp;badge=0&amp;autoplay=1&loop=1&autopause=1&autopause=0;player_id=0&amp;app_id=58479" frameborder="0"
+                allow="autoplay; loop; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Flashback - Mobile app prototype"></iframe></div>
             <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
         </div>
       </div>
     </div>
     <!-- Process -->
-    <div id="fb-process">
+    <div class="section" id="fb-process">
       <div class="container">
         <h2> PROCESS </h2>
         <center>
@@ -97,23 +119,23 @@
             <img src="img/flashback/3_fb_process@2x.png" alt="Flashback - Design Thinking Process">
           </picture>
         </center>
-          <p> The design thinking approach guaranteed user-centric solutions throughout the different steps of the project. </p>
+        <p> The design thinking approach guaranteed user-centric solutions throughout the different steps of the project. </p>
       </div>
     </div>
     <div id="fb-competitive">
       <div class="container">
         <h3> COMPETITIVE ANALYSIS & <br> USER RESEARCH </h3>
         <!-- columns -->
-        <div class="project-row">
+        <div class="row">
           <!-- column 1 -->
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-6">
             <picture>
               <source srcset="img/flashback/4_fb_analysis@1x.png" media="(max-width:767px)">
               <img src="img/flashback/4_fb_analysis@2x.png" alt="Flashback - Competitive Analysis">
             </picture>
           </div>
           <!-- column 2 -->
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-6">
             <p> I first researched competitor apps. I looked into Spotify, Mixcloud, and Soundcloud. I studied their usability and aesthetics, and gathered ideas for the UI patterns of my project. </p>
             <p> Three key functionalities were defined for the app: </p>
             <ul>
@@ -125,14 +147,14 @@
           </div>
         </div>
         <!-- columns -->
-        <div class="project-row">
+        <div class="row">
           <!-- column 1 -->
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-6">
             <p> I thought of a third one when talking to music enthusiasts. They were frustrated with the lack of artists’ information on music apps. Sure you can always google the artist but, wouldn’t it be swell if you could learn more about their
               journey, the producers they worked with, anecdotes about records, and whatnot on that very app you are using? I chose to add an expandable biography on the artists’ screen. </p>
           </div>
           <!-- column 2 -->
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-6">
             <picture>
               <source srcset="img/flashback/6_fb_mockups@1x.png" media="(max-width:767px)">
               <img src="img/flashback/6_fb_mockups@2x.png" alt="Flashback - Mockups">
@@ -145,9 +167,10 @@
       </div>
     </div>
     <!-- wireframes -->
-    <div id="fb-wireframes">
+    <div class="section" id="fb-wireframes">
       <div class="container">
         <h3> WIREFRAMES, PROTOTYPING <br> & USABILITY TESTING </h3>
+        <p> Low-fidelity wireframes ↓ </p>
         <div class="row">
           <picture>
             <source srcset="img/flashback/7.1_fb_low_fid@1x.png" media="(max-width:767px)">
@@ -162,40 +185,40 @@
             <img src="img/flashback/7.3_fb_low_fid@2x.png" alt="Flashback - Low-Fidelity Wireframes">
           </picture>
         </div>
-        <center>
-          <div class="row">
-            <picture class="mid-fid">
-              <source srcset="img/flashback/8.1_fb_mid_fid@1x.png" media="(max-width:767px)">
-              <img src="img/flashback/8.1_fb_mid_fid@2x.png" alt="Flashback - Mid-Fidelity Wireframes">
-            </picture>
-            <picture class="mid-fid">
-              <source srcset="img/flashback/8.2_fb_mid_fid@1x.png" media="(max-width:767px)">
-              <img src="img/flashback/8.2_fb_mid_fid@2x.png" alt="Flashback - Mid-Fidelity Wireframes">
-            </picture>
-            <picture class="mid-fid">
-              <source srcset="img/flashback/8.3_fb_mid_fid@1x.png" media="(max-width:767px)">
-              <img src="img/flashback/8.3_fb_mid_fid@2x.png" alt="Flashback - Mid-Fidelity Wireframes">
-            </picture>
-          </div>
-        </center>
+        <p> Mid-fidelity wireframes ↓ </p>
+        <div class="row wireframes">
+          <picture>
+            <source srcset="img/flashback/8.1_fb_mid_fid@1x.png" media="(max-width:767px)">
+            <img src="img/flashback/8.1_fb_mid_fid@2x.png" alt="Flashback - Mid-Fidelity Wireframes">
+          </picture>
+          <picture>
+            <source srcset="img/flashback/8.2_fb_mid_fid@1x.png" media="(max-width:767px)">
+            <img src="img/flashback/8.2_fb_mid_fid@2x.png" alt="Flashback - Mid-Fidelity Wireframes">
+          </picture>
+          <picture>
+            <source srcset="img/flashback/8.3_fb_mid_fid@1x.png" media="(max-width:767px)">
+            <img src="img/flashback/8.3_fb_mid_fid@2x.png" alt="Flashback - Mid-Fidelity Wireframes">
+          </picture>
+        </div>
         <p> During usability tests, I was thrilled to observe no pain points as
           testers navigated the app: they achieved their goals with great ease
           and enjoyed the extra functionalities. </p>
       </div>
     </div>
     <!-- inspiration board -->
-    <div id="fb-inspiration">
+    <div class="section" id="fb-inspiration">
       <div class="container">
         <h3> INSPIRATION BOARD & BRANDING </h3>
         <!-- columns -->
         <div class="row">
           <!-- column 1 -->
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-6">
             <p> Wireframes, user-flows, and usability tests done, I gathered ideas to define the branding of the app. I wanted it vibrant with the energy of 80s nightlife, the dark side of <i>Heavy Metal</i>, and the bubbly touch of
-              <i>High-Energy</i> and <i>Italo Disco</i>. </p>
+              <i>High-Energy</i> and <i>Italo Disco</i>.
+            </p>
           </div>
           <!-- column 2 -->
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-6">
             <p> The contrasts between bright colours created the fun and neon mood I was looking for. The black and dark purple served these contrasts. Not only did they recall the night but also 80s Sci-Fi imagery. </p>
           </div>
         </div>
@@ -205,6 +228,8 @@
             <img src="img/flashback/9_fb_board@2x.png" alt="Flashback - Inspiration Board">
           </picture>
         </center>
+      </div>
+      <div class="section container">
         <h3> ICONONGRAPHY </h3>
         <div id="fb-icons">
           <center>
@@ -214,15 +239,15 @@
             </picture>
           </center>
         </div>
-        <p> The choice of sharp edges, which recalled 80s angular shapes
+        <p class="bottom-text"> The choice of sharp edges, which recalled 80s angular shapes
           and fashion, assured the icons’ consistency. </p>
       </div>
     </div>
     <!-- Final Design -->
-    <div id="fb-final-designs">
+    <div class="section" id="fb-final-designs">
       <div class="container">
         <h2> FINAL DESIGNS </h2>
-        <p> Once the UI style guide was achieved, I perfected the logo and finalized my designs into a minimal yet colourful homage to the <i style="color: #FA4C98;font-weight: 700">tubular decade of the 80s</i>! </p>
+        <p> Once the UI style guide was achieved, I perfected the logo and finalized my designs into a minimal yet colourful homage to the <i style="font-weight: 300">tubular</i> decade of the 80s! </p>
         <p> You can view the full prototype <a href="https://marvelapp.com/prototype/2b0i7j76/screen/81368202">here</a>.</p>
       </div>
       <center>
@@ -237,7 +262,7 @@
             <source srcset="img/flashback/11.2_fb_final@1x.png" media="(max-width:767px)">
             <img src="img/flashback/11.2_fb_final@2x.png" alt="Flashback - Final Designs">
           </picture>
-          <p class="caption"> Easily access the settings of your account and find all 80s music with our
+          <p class="caption"> Easily access the settings of your account, and find all 80s music with our
             intelligent search engine ↓ </p>
           <picture>
             <source srcset="img/flashback/11.3_fb_final@1x.png" media="(max-width:767px)">
@@ -248,8 +273,8 @@
             <source srcset="img/flashback/11.4_fb_final@1x.png" media="(max-width:767px)">
             <img src="img/flashback/11.4_fb_final@2x.png" alt="Flashback - Final Designs">
           </picture>
-          <p class="caption"> Enjoy our minimal and colourful player and access your history, playlists
-            and the music you favourited ↓ </p>
+          <p class="caption"> Enjoy our minimal and colourful player, and access your history, playlists
+            and tracks you favourited ↓ </p>
           <picture>
             <source srcset="img/flashback/11.5_fb_final@1x.png" media="(max-width:767px)">
             <img src="img/flashback/11.5_fb_final@2x.png" alt="Flashback - Final Designs">
@@ -273,37 +298,39 @@
       </center>
     </div>
     <!-- section 6 -->
-    <div id="fb-retrospective">
+    <div id="fb-retrospective" class="section">
       <div class="container">
         <h2> RETROSPECTIVE </h2>
         <!-- columns -->
         <div class="row">
           <!-- column 1 -->
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-6">
             <p> Flashback was my very first design project and it all went pretty smoothly. I’ve learned the importance of keeping users at the center of each decision. Research and testing taught me to never settle for what I think makes sense, and
               to acknowledge the wide variety of minds and logic surrounding us. </p>
           </div>
           <!-- column 2 -->
-          <div class="col-md-6">
+          <div class="col-md-12 col-lg-6">
             <p> The biggest challenge may have been designing the icons. Making sure they all look consistent is not as easy as it seems. Nevertheless, I deeply enjoyed the process. I also realized how passionate I am about achieving strong branding
               and turning my solutions into a beautiful, consistent, and intuitive interfaces. </p>
           </div>
         </div>
-        <center>
-          <picture>
-            <source srcset="img/flashback/12_fb_final_mockup@1x.png" media="(max-width:767px)">
-            <img src="img/flashback/12_fb_final_mockup@2x.png" alt="Flashback - Mockup">
-          </picture>
-        </center>
+        <div>
+          <center>
+            <picture class="center">
+              <source srcset="img/flashback/12_fb_final_mockup@1x.png" media="(max-width:767px)">
+              <img src="img/flashback/12_fb_final_mockup@2x.png" alt="Flashback - Mockup">
+            </picture>
+          </center>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer id="contact">
+  <footer class="section" id="contact">
     <div class="container">
       <h3> Let's talk </h3>
       <p>
-        Want to collaborate or discuss my work? Feel free to call: <a href="tel:+4917681182670">+49 176 81182670</a>, or send an email.
+        Want to collaborate or discuss my work? Feel free to call: <a class="phone" href="tel:+4917681182670">+49 176 81182670</a>, or send an email.
       </p>
       <div>
         <a href="mailto:valplessy@gmail.com" class="button contact">send email</a>
