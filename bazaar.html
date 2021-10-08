@@ -12,9 +12,31 @@
 </head>
 
 <body id="bazaar">
+
+  <button onclick="topFunction()" id="back-up-button" title="Go to top"> ↑ top</button>
+<script>
+  var mybutton = document.getElementById("back-up-button");
+  window.onscroll = function() {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 540;
+    document.documentElement.scrollTop = 540;
+  }
+</script>
+
   <header id="header">
     <div class="container">
-      <img class="logo" src="img/logo.svg" alt="Logo Valentin Plessy">
+      <a href="index.html"><img class="logo" src="img/logoyellow.svg" alt="Logo Valentin Plessy"></a>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
@@ -26,47 +48,344 @@
   </header>
 
   <main>
-    <div id="bz-intro">
+    <!-- Intro -->
+    <div class="section" id="bz-intro">
+      <!-- columns -->
       <div class="container">
+        <!-- column 1 -->
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <svg width="270px" height="378px" viewBox="0 0 270 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Logo" transform="translate(0.000000, 0.000000)">
+                  <g id="Bazaar" transform="translate(0.000000, 314.000000)">
+                    <rect id="Rectangle" fill="#1A0804" x="0" y="0" width="270" height="64"></rect>
+                    <path
+                      d="M34.6117008,52.2946323 C43.4630721,52.2946323 49.192115,47.5696427 49.192115,40.3819312 L49.192115,40.3246585 C49.192115,34.941034 44.4942998,30.8174067 38.9371282,30.6742252 L38.9371282,30.4451347 C43.7495242,29.8437724 47.4447569,26.2355985 47.4447569,21.4533363 L47.4447569,21.3960637 C47.4447569,14.8669871 42.4604896,10.9724502 33.9242157,10.9724502 L13.6147586,10.9724502 L13.6147586,52.2946323 L34.6117008,52.2946323 Z M30.0183104,27.1772275 L25.7434028,27.1772275 L25.7434028,19.0748388 L30.5245495,19.0748388 C33.5619839,19.0748388 35.4463182,20.5630326 35.4463182,22.9606783 L35.4463182,23.0157966 C35.4463182,25.6063562 33.5901083,27.1772275 30.0183104,27.1772275 Z M31.0515176,43.3820048 L25.7434028,43.3820048 L25.7434028,34.4693773 L30.7875782,34.4693773 C34.8933023,34.4693773 37.0634707,36.0588905 37.0634707,38.8689227 L37.0634707,38.925691 C37.0634707,41.7924916 34.8639757,43.3820048 31.0515176,43.3820048 Z M63.5314528,52.2946323 L65.6708338,44.076014 L77.993668,44.076014 L80.1330489,52.2946323 L92.8552342,52.2946323 L79.4199219,10.9724502 L64.2445798,10.9724502 L50.8092675,52.2946323 L63.5314528,52.2946323 Z M75.8751323,35.2796161 L67.7893695,35.2796161 L71.7150659,20.6953165 L71.9494358,20.6953165 L75.8751323,35.2796161 Z M129.241167,52.2946323 L129.241167,42.6728352 L110.252509,42.6728352 L110.252509,42.4437448 L128.555862,18.5610699 L128.555862,10.9724502 L96.2608656,10.9724502 L96.2608656,20.5942472 L114.450001,20.5942472 L114.450001,20.8233377 L96.0895393,44.6773763 L96.0895393,52.2946323 L129.241167,52.2946323 Z M144.389081,52.2946323 L146.528462,44.076014 L158.851296,44.076014 L160.990677,52.2946323 L173.712862,52.2946323 L160.27755,10.9724502 L145.102208,10.9724502 L131.666896,52.2946323 L144.389081,52.2946323 Z M156.73276,35.2796161 L148.646998,35.2796161 L152.572694,20.6953165 L152.807064,20.6953165 L156.73276,35.2796161 Z M188.0522,52.2946323 L190.191581,44.076014 L202.514415,44.076014 L204.653796,52.2946323 L217.375982,52.2946323 L203.940669,10.9724502 L188.765327,10.9724502 L175.330015,52.2946323 L188.0522,52.2946323 Z M200.39588,35.2796161 L192.310117,35.2796161 L196.235813,20.6953165 L196.470183,20.6953165 L200.39588,35.2796161 Z M233.343605,52.2946323 L233.343605,38.7210257 L237.252896,38.7210257 L243.665257,52.2946323 L256.996219,52.2946323 L249.290136,36.9169387 C253.227551,34.9696703 255.814995,30.3305895 255.814995,25.1760554 L255.814995,25.1187828 C255.814995,15.9551665 250.133868,10.9724502 239.699718,10.9724502 L221.418863,10.9724502 L221.418863,52.2946323 L233.343605,52.2946323 Z M237.808506,30.4181829 L232.738931,30.4181829 L232.738931,19.8850777 L237.808506,19.8850777 C241.016373,19.8850777 243.250423,22.0389059 243.250423,25.1368781 L243.250423,25.1958871 C243.250423,28.3233637 241.073656,30.4181829 237.808506,30.4181829 Z"
+                      id="BAZAAR" fill="#FFFCF2" fill-rule="nonzero"></path>
+                  </g>
+                  <g>
+                    <g id="Heart" transform="translate(134.646520, 64.710023) rotate(-8.000000) translate(-134.646520, -64.710023) translate(68.146520, 8.710023)" fill="#FDCA40" fill-rule="nonzero">
+                      <path class="heart"
+                        d="M66.6577464,112 C65.3822226,112 64.1066987,111.703704 62.8311748,111.407407 C12.4479823,92.7407407 -4.4527089,57.7777778 0.968267519,31.4074074 C4.79483911,12.4444444 19.7822445,0 38.5962215,0 C47.5248885,0 57.4101984,2.96296296 66.6577464,8.59259259 C75.9052944,2.96296296 85.4717234,0 94.4003904,0 C113.214367,0 128.201773,12.1481481 132.028344,31.1111111 C137.449321,57.1851852 120.622801,92.4444444 70.5584897,111.407407 C69.0356495,111.703704 67.9332703,112 66.6577464,112 Z"
+                        id="heart"></path>
+                    </g>
+                    <g id="Box" transform="translate(0.000000, 110.000000)">
+                      <polygon id="box-main" fill="#6C2C0D" points="137 32.4991506 107.973214 56.6756757 30 31.9955869 30 132.896496 137 171 243 132.896496 243 30 163.125 58.5810811"></polygon>
+                      <polygon id="box-shadow" fill="#2A1105" points="157.220957 42.2957119 243 32 243 59.1724895 176.4375 84.8888889 138.118831 32.8904382 137 32.4991506 121.285714 100 30 67.2766173 30 32.2561519 137 32.4991506"></polygon>
+                      <polygon id="box-top-right" fill="#A84616" points="30.4444444 0 137 32.4991506 109.866606 60 0 24.8522916"></polygon>
+                      <polygon id="box-top-left" fill="#994015" points="137 32.4991506 243.4 -1.41373024e-13 270 24.78125 163.6 61"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <!-- column 2 -->
+          <div class="col-md-6 col-lg-6">
+            <picture>
+              <source srcset="img/bazaar/2_bazaar_mockup@1x.png" media="(max-width:767px)">
+              <img src="img/bazaar/2_bazaar_mockup@2x.png" alt="Bazaar Mockup" </picture>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div id="bz-challenge">
+    <!-- Menu -->
+    <div class="section" id="bz-menu">
       <div class="container">
+        <ul>
+          <li><a href="#bz-challenge">
+              <h3>Challenge</h3>
+            </a></li>
+          <li><a href="#bz-process">
+              <h3>Process</h3>
+            </a></li>
+          <li><a href="#bz-final-designs">
+              <h3>Final Designs</h3>
+            </a></li>
+          <li><a href="#bz-retrospective">
+              <h3>Retrospective</h3>
+            </a></li>
+        </ul>
       </div>
     </div>
-
-    <div id="bz-process">
+    <!-- Challenge -->
+    <div class="section" id="bz-challenge">
       <div class="container">
+        <h2> CHALLENGE </h2>
+        <p> Design a native app of my choice for both iOS and Android. </p>
+        <!-- columns -->
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-md-6 col-lg-6">
+            <h3> PROBLEM </h3>
+            <p> There are numerous apps - such as eBay - to sell personal belongings no longer used. On the other hand, the number of apps to give these items for free is close to none. I came across two, Trash Nothing and Find It, only relevant in
+              the US and a possibility to put a price on the items, which defeats the purpose entirely. </p>
+            <h3> SOLUTION </h3>
+            <p> Create an app for users who wish to give away their belongings and for those who need them. It will also connect users with local charities if they wish to donate their items or money. The app has to be native as it uses push
+              notifications and geolocation to facilitate the users’ needs and goals. </p>
+            <p> You can view the full <a href="https://projects.invisionapp.com/share/E4112Q2PSMCG#/screens">iOS</a> and <a href="https://projects.invisionapp.com/share/KA112SLXHBZU#/screens">Android</a> prototypes.</p>
+          </div>
+          <!-- column 2 -->
+          <div class="col-md-6 col-lg-6 margin-left">
+            <div class="video" style="padding:158.33% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592636788?h=d17b31e4a7&amp;badge=0&amp;autoplay=1&loop=1&autopause=1&autopause=0;player_id=0&amp;app_id=58479" frameborder="0"
+                allow="autoplay; loop; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bazaar - Native iOS Prototype"></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+        <div class="bz-mockup">
+          <picture>
+            <source srcset="img/bazaar/3_bazaar_ios_mockups@1x.jpg" media="(max-width:767px)">
+            <img src="img/bazaar/3_bazaar_ios_mockups@2x.jpg" alt="Bazaar - Mockup">
+          </picture>
+        </div>
       </div>
     </div>
-
-    <div id="bz-final-designs">
+    </div>
+    <!-- Process -->
+    <div class="section" id="bz-process">
       <div class="container">
+        <h2> PROCESS </h2>
+        <p> I was in charge of both UX and UI processes. The design thinking approach guaranteed user-centric solutions as I was going through all phases of the project. </p>
+        <center>
+          <picture>
+            <source srcset="img/bazaar/4_bazaar_process@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/4_bazaar_process@2x.png" alt="Bazaar - Design Thinking Process">
+          </picture>
+          <p><b style="font-weight: 700">Let’s dive into some of the app’s deliverables and challenges: </b></p>
+        </center>
       </div>
     </div>
-
-    <div id="bz-retrospective">
+    <div class="section" id="bz-user-flow">
       <div class="container">
+        <h3> USER FLOW </h3>
+        <!-- columns -->
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-md-12 col-lg-6">
+            <p> To define the MVP of my product, I created three simple user flows: </p>
+            <p> → &nbsp;Post or request an item
+              <br> → &nbsp;Search items and contact owners
+              <br> → &nbsp;Look for a local charity and contact it
+            </p>
+            <p>After user testing, I added the extra flow of making a direct donation to charity.</p>
+          </div>
+          <!-- column 2 -->
+          <div class="col-md-12 col-lg-6">
+            <picture>
+              <source srcset="img/bazaar/5_bazaar_user_flow@1x.png" media="(max-width:767px)">
+              <img src="img/bazaar/5_bazaar_user_flow@2x.png" alt="Bazaar - User Flow">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <!-- Wireframes + Native requirements -->
+      <div class="container" id="bz-native">
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-md-12 col-lg-6 margin-right">
+            <h3> WIREFRAMES & UI PATTERNS </h3>
+            <p> While working on low to high-fidelity wireframes, I quickly understood that familiar e-commerce UI patterns combined with a minimal and intuitive design were to be chosen over thinking too much outside the box. </p>
+            <p> Following <i>iOS</i> and <i>Android</i> respective design guidelines, users have access to different navigation elements: </p>
+            <picture>
+              <source srcset="img/bazaar/6_bazaar_native_ios@1x.png" media="(max-width:767px)">
+              <img src="img/bazaar/6_bazaar_native_ios@2x.png" alt="Bazaar - Wireframes Native iOS">
+            </picture>
+            <p> ↑ <b style="font-weight: 700">iOS</b>&nbsp;: account icon + bottom navigation </p>
+            <p> <b style="font-weight: 700">Android</b>&nbsp;: side entrance menu + top and bottom navigation + tab bar ↓ </p>
+            <picture>
+              <source srcset="img/bazaar/7_bazaar_native_android@1x.png" media="(max-width:767px)">
+              <img src="img/bazaar/7_bazaar_native_android@2x.png" alt="Bazaar - Wireframes Native Android">
+            </picture>
+          </div>
+          <!-- column 2 -->
+          <div class="col-md-12 col-lg-6 margin-left">
+            <h3> NATIVE REQUIREMENTS </h3>
+            <p> <i>iOS Human Interface</i> and <i>Material Design</i> guidelines helped me meet the native requirements. Nevertheless, it was important to search for design solutions, which could give the app a strong identity without contradicting
+              native guidelines and components. </p>
+            <p> Respective native elements: search bars, sliders, and alerts. ↓ </p>
+            <picture>
+              <source srcset="img/bazaar/8_bazaar_native@1x.png" media="(max-width:767px)">
+              <img class="native" src="img/bazaar/8_bazaar_native@2x.png" alt="Flashback - Native Requirements">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testing -->
+    <div class="section" id="bz-testing">
+      <div class="container">
+        <h3> TESTING & ITERATIONS </h3>
+        <!-- colums -->
+        <div class="row">
+          <div class="col-md-12 col-lg-6 margin-right">
+            <p> During usability tests, both <i>iOS</i> and <i>Android</i> designs felt familiar and appropriate to users of each platform. The minimal and intuitive layout allowed users not to lose focus on their main goals. </p>
+            <p> Yet, the initial color palette did not win their heart: the contrast between the colors was too distracting. The dropdown menus were not a hit either. </p>
+            <p> After a few iterations, I decided on a warm and vintage palette and changed the menus into buttons, the app gaining visual strength and cohesiveness. </p>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <picture>
+              <source srcset="img/bazaar/9_bazaar_iterations@1x.png" media="(max-width:767px)">
+              <img src="img/bazaar/9_bazaar_iterations@2x.png" alt="Bazaar - Iterations">
+            </picture>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-4">
+            <p> <b style="font-weight: 700">« Contacting charities is great but I should also be able to give them a donation directly. »</b> </p>
+            <p> I thought it was brilliant feedback and immediately added a primary call-to-action button to the screen. </p>
+          </div>
+          <div class="col-md-12 col-lg-8">
+            <picture>
+              <source srcset="img/bazaar/9.2_bazaar_hand_mockup_iterations@1x.png" media="(max-width:767px)">
+              <img class="iteration" src="img/bazaar/9.2_bazaar_hand_mockup_iterations@2x.png" alt="Bazaar - Iterations">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- style guide -->
+    <div class="section" id="bz-style-guide">
+      <div class="container">
+        <h3> UI STYLE GUIDE </h3>
+        <p> After user testing (and a few extra iterations!), I perfected my style guide and finalized my designs. <br>The app was ready for launch! </p>
+        <!-- columns -->
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-md-12 col-lg-6">
+            <picture>
+              <source srcset="img/bazaar/10.1_bazaar_style@1x.png" media="(max-width:767px)">
+              <img src="img/bazaar/10.1_bazaar_style@2x.png" alt="Bazaar - Style Guide">
+            </picture>
+          </div>
+          <!-- column 2 -->
+          <div class="col-md-12 col-lg-6">
+            <picture>
+              <source srcset="img/bazaar/10.2_bazaar_style@1x.png" media="(max-width:767px)">
+              <img src="img/bazaar/10.2_bazaar_style@2x.png" alt="Bazaar - Style Guide">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Final Design -->
+    <div class="section" id="bz-final-designs">
+      <div class="container">
+        <h3> FINAL DESIGNS </h3>
+        <p> You can view the full <a href="https://projects.invisionapp.com/share/E4112Q2PSMCG#/screens">iOS</a> and <a href="https://projects.invisionapp.com/share/KA112SLXHBZU#/screens">Android</a> prototypes.</p>
+        </p>
+      </div>
+      <center>
+        <div class="container bz-mockups">
+          <picture>
+            <source srcset="img/bazaar/11.1_bazaar_ios@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/11.1_bazaar_ios@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> Easily sign up or log into your account ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/11.2_bazaar_ios@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/11.2_bazaar_ios@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> Add new items to give away and upload pictures ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/11.3_bazaar_ios@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/11.3_bazaar_ios@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> Preview your post ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/11.4_bazaar_ios@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/11.4_bazaar_ios@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> Search items and get personalized suggestions. <br> Access the inventory of items you give or need ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/11.5_bazaar_ios@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/11.5_bazaar_ios@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> Empty screens design for every scenario ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/11.6_bazaar_ios@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/11.6_bazaar_ios@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <picture>
+            <source srcset="img/bazaar/12.1_bazaar_android@1x.png" media="(max-width:767px)">
+            <img class="margin-top" src="img/bazaar/12.1_bazaar_android@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> Navigate our Android side-entrance menu <br> or find items and charities around you ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/12.2_bazaar_android@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/12.2_bazaar_android@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> Search items ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/12.3_bazaar_android@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/12.3_bazaar_android@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> View items and get in touch with the owners ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/12.4_bazaar_android@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/12.4_bazaar_android@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> Search charities around you and get in touch ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/12.5_bazaar_android@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/12.5_bazaar_android@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+          <p class="caption"> To each scenario its empty screen ↓ </p>
+          <picture>
+            <source srcset="img/bazaar/12.6_bazaar_android@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/12.6_bazaar_android@2x.png" alt="Bazaar - Final Designs">
+          </picture>
+        </div>
+      </center>
+    </div>
+    <!-- section 6 -->
+    <div id="bz-retrospective" class="section">
+      <div class="container">
+        <h2> RETROSPECTIVE </h2>
+        <!-- columns -->
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-md-12 col-lg-6">
+            <p> The insights I got throughout the process are numerous. For example, being a perfectionist while rapid prototyping or when working on low-fidelity wireframes is beside the point: these are not mockups! Early stages are meant to try
+              out ideas and make mistakes. That being said, my choices when prototyping proved to be relevant and intuitive: testing them was a great success. It showcases the importance of user research, gathering and analyzing data, keeping my
+              focus on user-centric solutions. </p>
+          </div>
+          <!-- column 2 -->
+          <div class="col-md-12 col-lg-6">
+            <p> But I did get lost from time-time: I was so obsessed with meeting native requirements that I settled for colors and a couple of design solutions that did not work. Usability and preference testings are crucial when hitting a
+              roadblock. They allowed me to incorporate major improvements to the looks and feels of Bazaar. I’ve learned that working alone always leads to a dead-end: what seems obvious and logical to you isn’t necessarily to others. Asking for
+              feedback at each step of the process is key! </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p> I wanted to create an app with a strong identity, combining <b style="font-weight: 700">modern</b> and <b style="font-weight: 700">vintage</b>, <b style="font-weight: 700">kindness</b> and <b style="font-weight: 700">generosity</b>. I
+            do think it shows and I am very proud of the end result. </p>
+        </div>
+        <div class="final-mockup">
+          <picture>
+            <source srcset="img/bazaar/13_bazaar_final_mockup@1x.png" media="(max-width:767px)">
+            <img src="img/bazaar/13_bazaar_final_mockup@2x.png" alt="Bazaar - Final Mockup">
+          </picture>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer id="contact">
+  <footer class="section" id="contact">
     <div class="container">
-      <h2> Let's talk </h2>
+      <h3> Let's talk </h3>
       <p>
-        Want to collaborate or discuss my work? Feel free to call: <a href="tel:+4917681182670">+49 176 81182670</a>, or send an email.
+        Want to collaborate or discuss my work? Feel free to call: <a class="phone" href="tel:+4917681182670">+49 176 81182670</a>, or send an email.
       </p>
       <div>
         <a href="mailto:valplessy@gmail.com" class="button contact">send email</a>
       </div>
-      <div>
+      <div id="social">
         <a href="https://www.linkedin.com/in/valentin-plessy" target="_blank">
           <svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>linkedin_logo</title>
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Artboard" transform="translate(-139.000000, -83.000000)" fill="#000000" fill-rule="nonzero">
+              <g id="Artboard" transform="translate(-139.000000, -83.000000)" fill="#ffffff" fill-rule="nonzero">
                 <g id="linkedin_logo" transform="translate(139.000000, 82.999000)">
                   <path
                     d="M4.98,2.5 C4.98,3.881 3.87,5 2.5,5 C1.13,5 0.02,3.881 0.02,2.5 C0.02,1.12 1.13,0 2.5,0 C3.87,0 4.98,1.12 4.98,2.5 Z M5,7 L0,7 L0,23 L5,23 L5,7 Z M12.982,7 L8.014,7 L8.014,23 L12.983,23 L12.983,14.601 C12.983,9.931 19.012,9.549 19.012,14.601 L19.012,23 L24,23 L24,12.869 C24,4.989 15.078,5.276 12.982,9.155 L12.982,7 Z"
@@ -80,7 +399,7 @@
           <svg width="34px" height="21px" viewBox="0 0 34 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>behance_logo</title>
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Artboard" transform="translate(-169.000000, -85.000000)" fill="#000000" fill-rule="nonzero">
+              <g id="Artboard" transform="translate(-169.000000, -85.000000)" fill="#ffffff" fill-rule="nonzero">
                 <g id="behance_logo" transform="translate(169.000000, 85.000000)">
                   <path
                     d="M31.1663301,2.8 L21.2497705,2.8 L21.2497705,0 L31.1663301,0 L31.1663301,2.8 Z M33.6114704,16.8 C32.9853105,18.6158 30.7370847,21 26.3851317,21 C22.0303454,21 18.5028835,18.5794 18.5028835,13.055 C18.5028835,7.581 21.796598,4.767 26.2462999,4.767 C30.6124194,4.767 33.2785573,7.2618 33.860801,10.9634 C33.9712998,11.6718 34.015216,12.6266 33.9953829,13.9594 L22.6239223,13.9594 C22.808087,18.4548 27.5581191,18.5962 29.1235188,16.8 L33.6114704,16.8 Z M22.7230879,11.2 L29.756762,11.2 C29.6080136,9.0342 28.147446,8.0934 26.2477165,8.0934 C24.1709056,8.0934 23.0220014,9.1686 22.7230879,11.2 Z M9.16006775,20.9832 L0,20.9832 L0,0.0294 L9.84997696,0.0294 C17.6075599,0.1428 17.7548916,7.651 13.7032687,9.6978 C18.6062991,11.4618 18.7706306,20.9832 9.16006775,20.9832 Z M4.2499541,8.4 L9.32723261,8.4 C12.8801942,8.4 13.4440215,4.2 8.88523738,4.2 L4.2499541,4.2 L4.2499541,8.4 Z M9.05381889,12.6 L4.2499541,12.6 L4.2499541,16.8224 L8.98298633,16.8224 C13.3108563,16.8224 13.0459424,12.6 9.05381889,12.6 L9.05381889,12.6 Z"
@@ -94,7 +413,7 @@
           <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>dribbble_logo</title>
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Artboard" transform="translate(-209.000000, -85.000000)" fill="#000000" fill-rule="nonzero">
+              <g id="Artboard" transform="translate(-209.000000, -85.000000)" fill="#ffffff" fill-rule="nonzero">
                 <g id="dribbble_logo" transform="translate(209.000000, 85.000000)">
                   <path
                     d="M10.5,0 C4.71023731,0 0,4.71028773 0,10.5 C0,16.2897123 4.71023731,21 10.5,21 C16.2897627,21 21,16.2897123 21,10.5 C21,4.71028773 16.2897627,0 10.5,0 Z M17.3424264,4.95204556 C18.5211939,6.40304211 19.2469092,8.23448973 19.3072637,10.2309306 C17.1237115,9.77888506 15.146511,9.83193466 13.4010629,10.174172 C13.0850165,9.43507418 12.7578434,8.73093062 12.4276356,8.06545032 C14.3285219,7.24655327 15.983382,6.20062191 17.3424264,4.95204556 Z M16.1596127,3.74988761 C14.8105713,4.9812678 13.2471982,5.89300165 11.6463986,6.56612468 C10.4714524,4.41750337 9.34730741,2.79949048 8.66250281,1.8800015 C9.25548313,1.75367151 9.86993032,1.6858984 10.5,1.6858984 C12.653094,1.6858984 14.6272599,2.46298516 16.1596127,3.74988761 Z M6.95976366,2.43061591 C7.47687936,3.10070433 8.70858354,4.77851042 10.0316624,7.16563015 C6.70643203,8.24898846 3.47988183,8.43151506 1.92943387,8.44848644 C2.575688,5.74880114 4.46623422,3.52892252 6.95976366,2.43061591 Z M1.6950965,10.1386558 C1.71173052,10.1386558 1.72780258,10.1387682 1.74477377,10.1387682 C2.81609454,10.1387682 4.77890883,10.0667241 7.08968883,9.64536191 C8.40804727,9.40495279 9.65818374,9.0813727 10.8312193,8.68035366 C11.1365884,9.28896299 11.4401593,9.93095309 11.734514,10.6038513 C10.092017,11.1326615 8.70689766,11.8935636 7.60972673,12.6490709 C5.7698693,13.9160797 4.48095758,15.3217818 3.77715873,16.1909186 C2.47408561,14.654166 1.68588035,12.6679529 1.68588035,10.5 C1.68588035,10.3788401 1.69015125,10.2586917 1.6950965,10.1386558 Z M4.99200411,17.3738573 C5.59790951,16.6109321 6.83118718,15.2223138 8.61518577,14.0038588 C9.82755852,13.1757455 11.0818535,12.560505 12.3731255,12.1566762 C13.1223307,14.0986063 13.7619537,16.2443054 14.1432998,18.5226285 C13.0319675,19.0292972 11.799027,19.3141016 10.5,19.3141016 C8.41715102,19.3141016 6.50210334,18.5863555 4.99200411,17.3738573 Z M15.6943098,17.6148284 C15.3012748,15.5224037 14.7151504,13.5549603 14.0375389,11.7568935 C15.7043126,11.4756856 17.4269452,11.5336805 19.1962204,11.931103 C18.8146495,14.2565188 17.5206801,16.2777986 15.6943098,17.6148284 Z"
