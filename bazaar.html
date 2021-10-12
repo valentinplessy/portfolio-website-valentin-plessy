@@ -3,49 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About Valentin Plessy</title>
+  <title>Valentin Plessy - UI/UX Designer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/3ca509e50f.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,900;1,200&display=swap" rel="stylesheet">
 </head>
 
 <body id="bazaar">
 
   <button onclick="topFunction()" id="back-up-button" title="Go to top"> ↑ top</button>
-<script>
-  var mybutton = document.getElementById("back-up-button");
-  window.onscroll = function() {
-    scrollFunction()
-  };
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-
-  function topFunction() {
-    document.body.scrollTop = 540;
-    document.documentElement.scrollTop = 540;
-  }
-</script>
-
-  <header id="header">
-    <div class="container">
-      <a href="index.html"><img class="logo" src="img/logoyellow.svg" alt="Logo Valentin Plessy"></a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header id="header">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a class="logo" href="index.html"><img class="logo" src="img/logoyellow.svg" alt="Logo Valentin Plessy"></a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
   <main>
     <!-- Intro -->
@@ -129,7 +114,7 @@
           <!-- column 2 -->
           <div class="col-md-6 col-lg-6 margin-left">
             <div class="video" style="padding:158.33% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592636788?h=d17b31e4a7&amp;badge=0&amp;autoplay=1&loop=1&autopause=1&autopause=0;player_id=0&amp;app_id=58479" frameborder="0"
-                allow="autoplay; loop; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bazaar - Native iOS Prototype"></iframe></div>
+                allow="autoplay; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Bazaar - Native iOS Prototype"></iframe></div>
             <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
         </div>
@@ -345,19 +330,19 @@
         <!-- columns -->
         <div class="row">
           <!-- column 1 -->
-          <div class="col-md-12 col-lg-6">
+          <div class="col-md-12 col-lg-6 margin-right">
             <p> The insights I got throughout the process are numerous. For example, being a perfectionist while rapid prototyping or when working on low-fidelity wireframes is beside the point: these are not mockups! Early stages are meant to try
               out ideas and make mistakes. That being said, my choices when prototyping proved to be relevant and intuitive: testing them was a great success. It showcases the importance of user research, gathering and analyzing data, keeping my
               focus on user-centric solutions. </p>
           </div>
           <!-- column 2 -->
-          <div class="col-md-12 col-lg-6">
+          <div class="col-md-12 col-lg-6 margin-left">
             <p> But I did get lost from time-time: I was so obsessed with meeting native requirements that I settled for colors and a couple of design solutions that did not work. Usability and preference testings are crucial when hitting a
               roadblock. They allowed me to incorporate major improvements to the looks and feels of Bazaar. I’ve learned that working alone always leads to a dead-end: what seems obvious and logical to you isn’t necessarily to others. Asking for
               feedback at each step of the process is key! </p>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="final-quote">
           <p> I wanted to create an app with a strong identity, combining <b style="font-weight: 700">modern</b> and <b style="font-weight: 700">vintage</b>, <b style="font-weight: 700">kindness</b> and <b style="font-weight: 700">generosity</b>. I
             do think it shows and I am very proud of the end result. </p>
         </div>
@@ -428,5 +413,8 @@
     </div>
   </footer>
 </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </html>

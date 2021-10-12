@@ -3,49 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About Valentin Plessy</title>
+  <title>Valentin Plessy - UI/UX Designer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/3ca509e50f.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,900;1,200&display=swap" rel="stylesheet">
 </head>
 
 <body id="flashback">
 
   <button onclick="topFunction()" id="back-up-button" title="Go to top"> ↑ top</button>
-  <script>
-    var mybutton = document.getElementById("back-up-button");
-    window.onscroll = function() {
-      scrollFunction()
-    };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    function topFunction() {
-      document.body.scrollTop = 650;
-      document.documentElement.scrollTop = 650;
-    }
-  </script>
-
-  <header id="header">
-    <div class="container">
-      <a href="index.html"><img class="logo" src="img/logoblack.svg" alt="Logo Valentin Plessy"></a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header id="header">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a class="logo" href="index.html"><img class="logo" src="img/logoblack.svg" alt="Logo Valentin Plessy"></a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
   <main>
     <!-- Intro -->
@@ -103,7 +88,7 @@
           <!-- column 2 -->
           <div class="col-md-6">
             <div style="padding:124.57% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592821327?h=afd5a8b1cc&amp;badge=0&amp;autoplay=1&loop=1&autopause=1&autopause=0;player_id=0&amp;app_id=58479" frameborder="0"
-                allow="autoplay; loop; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Flashback - Mobile app prototype"></iframe></div>
+                allow="autoplay; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Flashback - Mobile app prototype"></iframe></div>
             <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
         </div>
@@ -383,5 +368,8 @@
     </div>
   </footer>
 </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </html>
