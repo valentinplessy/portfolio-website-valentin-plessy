@@ -73,38 +73,26 @@ a:active {
 /* Layout styling */
 header {
   background-color: #FFFFFF;
-  text-align: center;
-  padding: 10px 0;
+  padding-bottom: 4px;
   position: fixed;
   width: 100%;
   box-shadow: 0px 11px 17px 0px rgba(50, 50, 50, 0.49);
   z-index: 99;
-}
-
-main {
-  padding-top: 93.48px;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
+  transition: top 0.5s;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a,
 a:visited {
-  padding: 0 15px;
+  padding: 0;
   text-transform: uppercase;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 300;
   color: #000000;
 }
 
@@ -117,9 +105,37 @@ nav>ul>li>a:active {
   color: #FA4C98;
 }
 
+/* hamburger menu */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 18px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  transition: 0.4s;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 .logo {
-  max-width: 250px;
-  margin-top: 4px;
+  max-width: 160px;
+  margin-top: 12px;
+}
+
+#header .logo a {
+  padding: 0;
+  margin: 0;
 }
 
 .section {
@@ -211,6 +227,7 @@ footer {
   display: inline-block;
   background-color: #000000;
   width: 100%;
+  padding-top: 40px;
 }
 #hero h1,
 #hero p {
@@ -268,6 +285,9 @@ footer {
 }
 
 /* about */
+#about-me {
+  padding-top: 80px;
+}
 #about-me h1 {
   text-align: center;
 }
@@ -324,7 +344,9 @@ footer {
   animation: 700ms back-move ease-out;
 }
 
-
+#fb-intro {
+  padding-top: 60px;
+}
 #fb-intro {
   text-align: center;
   background-color: #211C36;
@@ -503,6 +525,11 @@ a:focus {
   text-align: center;
 }
 
+
+#bz-intro {
+  padding-top: 60px;
+}
+
 #bz-intro svg {
   width: 100%;
   max-width: 150px;
@@ -512,7 +539,7 @@ a:focus {
 
 #bz-intro img {
   position: relative;
-  bottom: -52px;
+  bottom: -53px;
   margin-bottom: 0;
 }
 
@@ -578,7 +605,7 @@ a:focus {
 
 #bz-testing .iteration {
   position: relative;
-  bottom: -72px;
+  bottom: -73px;
   margin-top: -60px;
 }
 
@@ -593,9 +620,12 @@ a:focus {
   margin-bottom: 20px;
 }
 
-
 .margin-top {
   margin-top: 40px;
+}
+
+#bz-retrospective img {
+  margin-top: 20px;
 }
 
 #bazaar #contact a,
@@ -648,12 +678,29 @@ h4 {
 nav {
  width: auto;
 }
-nav ul {
-  margin-top: 0;
+
+nav>ul>li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+nav>ul>li>a,
+a:visited {
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-size: 18.2px;
+  font-weight: 300;
+  color: #000000;
 }
 
-main {
-  padding-top: 53.48px;
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+
+.logo {
+  margin-top: 20px;
 }
 
 .section {
@@ -665,12 +712,16 @@ main {
 }
 
 header {
-  text-align: unset;
+  padding-bottom: 0;
 }
 header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.logo {
+  max-width: 250px;
 }
 
 #back-up-button {
@@ -695,6 +746,10 @@ header .container {
 }
 
 /* index */
+
+#hero {
+  padding-top: 120px;
+}
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,6 +809,9 @@ header .container {
 }
 
 /* flashback */
+#fb-intro {
+  padding-top: 120px;
+}
 #fb-intro img {
   margin-bottom: 60px;
 }
@@ -800,6 +858,10 @@ header .container {
 }
 
 /* bazaar */
+
+#bz-intro {
+    padding-top: 120px;
+  }
 #bz-intro {
   margin-top: -80px;
 }
@@ -894,10 +956,6 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
-main {
-  padding-top: 68.63px;
-}
-
   .container {
   max-width: 1200px;
   margin-left: auto;
@@ -917,7 +975,15 @@ a:focus {
 
 .logo {
   max-width: 250px;
-  margin-top: 10px;
+}
+
+nav>ul>li>a,
+a:visited {
+  padding: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000000;
 }
 
 /* nav animation */
@@ -925,7 +991,7 @@ header div.container a {
     text-decoration: none;
     color: #000000;
     margin: 0px 5px;
-    padding: 5px 5px;
+    padding: 2px 6px;
     position: relative;
     z-index: 0;
     cursor: pointer;
@@ -962,6 +1028,9 @@ header div.container a {
 
 /* index */
 
+#hero {
+  padding-top: 140px;
+}
 
 #hero p {
   margin-bottom: 40px;
@@ -1081,7 +1150,9 @@ header div.container a {
 }
 
 #bz-challenge .video {
-  width: 70%;
+  width:65%;
+  position: relative;
+  left: 100px;
 }
 
 
@@ -1129,11 +1200,19 @@ header div.container a {
 }
 #bz-retrospective img {
   width: 50%;
-  position: relative;
   left: 250px;
   margin-top: 40px;
 }
-
+#bz-retrospective .margin-right {
+  margin-right: 30px;
+}
+#bz-retrospective .margin-left {
+  margin-left: 30px;
+}
+#bz-retrospective .final-quote {
+  margin-top: 60px;
+  padding-right: 600px;
+}
 }
 
 /* ==============================
