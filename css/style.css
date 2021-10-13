@@ -78,7 +78,8 @@ header {
   width: 100%;
   box-shadow: 0px 11px 17px 0px rgba(50, 50, 50, 0.49);
   z-index: 99;
-  transition: top 0.5s;
+  top: 0;
+  transition: top 0.5s ease-in-out;
 }
 
 nav>ul {
@@ -88,7 +89,7 @@ nav>ul {
 }
 
 nav>ul>li>a,
-a:visited {
+nav>ul>li>a:visited {
   padding: 0;
   text-transform: uppercase;
   font-size: 14px;
@@ -97,8 +98,9 @@ a:visited {
 }
 
 nav>ul>li>a:hover,
-a:focus {
+nav>ul>li>a:focus {
   color: #FA4C98;
+  font-weight: 700;
 }
 
 nav>ul>li>a:active {
@@ -126,6 +128,9 @@ nav>ul>li>a:active {
 }
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
+}
+.nav-up {
+top: -40px;
 }
 
 .logo {
@@ -164,6 +169,10 @@ nav>ul>li>a:active {
   white-space: nowrap;
 }
 
+main {
+  margin-top: 37.75px;
+}
+
 #back-up-button {
   display: none;
   position: fixed;
@@ -174,8 +183,10 @@ nav>ul>li>a:active {
   border: none;
   outline: none;
   background-color: #ffffff;
-  opacity: 80%;
+  opacity: 100%;
   color: #000000;
+  border-radius: 5px;
+  opacity: 70%;
   font-weight: 300;
   cursor: pointer;
   padding: 10px;
@@ -184,6 +195,17 @@ nav>ul>li>a:active {
 #back-up-button:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+#back-up-button a,
+#back-up-button a:visited {
+  color: #000000;
+  font-weight: 700;
+}
+#back-up-button a:hover {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* footer */
@@ -227,7 +249,6 @@ footer {
   display: inline-block;
   background-color: #000000;
   width: 100%;
-  padding-top: 40px;
 }
 #hero h1,
 #hero p {
@@ -286,13 +307,14 @@ footer {
 
 /* about */
 #about-me {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 #about-me h1 {
   text-align: center;
 }
 #about-me img {
   max-width: 300px;
+  padding: 0 40px;
 }
 #about li::marker {
   color: #FA4C98;
@@ -307,7 +329,9 @@ footer {
 }
 #about .container .header {
   padding-left: 0;
+  margin-top: 20px;
 }
+
 
 /* flashback */
 #flashback h1,
@@ -324,10 +348,10 @@ footer {
 
  /* animation */
 #fb-intro svg {
- width: 100%;
- max-width: 100%;
- height: auto;
- }
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 
 @keyframes flash-move {
   from {transform: translate(-100px,0px);}
@@ -345,7 +369,7 @@ footer {
 }
 
 #fb-intro {
-  padding-top: 60px;
+  padding-top: 20px;
 }
 #fb-intro {
   text-align: center;
@@ -376,7 +400,7 @@ footer {
 }
 
 #fb-intro ul>li>a:hover,
-a:focus {
+#fb-intro ul>li>a:focus {
   color: #FA4C98;
   text-decoration: underline;
 }
@@ -384,7 +408,7 @@ a:focus {
   color: #FA4C98;
 }
 #fb-intro h3 {
-  margin: 12px;
+  margin: 10px;
 }
 #fb-intro .mockup img {
   display: inline-block;
@@ -525,11 +549,6 @@ a:focus {
   text-align: center;
 }
 
-
-#bz-intro {
-  padding-top: 60px;
-}
-
 #bz-intro svg {
   width: 100%;
   max-width: 150px;
@@ -566,9 +585,10 @@ a:focus {
 }
 
 #bz-menu ul>li>a:hover,
-a:focus {
+#bz-menu ul>li>a:focus,
+#bz-menu ul>li>a:active {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 #bz-menu ul>li>a:active {
   color: #ffffff;
@@ -583,6 +603,7 @@ a:focus {
 #bz-final-designs a:visited {
   color: #000000;
   font-weight: 700;
+  letter-spacing: 0.02em;
   text-decoration: underline;
 }
 
@@ -645,6 +666,10 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 
+main {
+  margin-top: 57px;
+}
+
 body {
     font-size: 18px;
 }
@@ -681,13 +706,13 @@ nav {
 
 nav>ul>li {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 nav>ul>li>a,
 a:visited {
-  padding-right: 20px;
+  padding-left: 20px;
   text-transform: uppercase;
-  font-size: 18.2px;
+  font-size: 18px;
   font-weight: 300;
   color: #000000;
 }
@@ -698,13 +723,12 @@ a:visited {
 .navtoggle li:last-child {
   display: none;
 }
-
-.logo {
-  margin-top: 20px;
+.nav-up {
+top: -100px;
 }
 
 .section {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .container {
@@ -712,23 +736,26 @@ a:visited {
 }
 
 header {
-  padding-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 8px;
 }
-header .container {
+header .navtoggle {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   max-width: 250px;
+  margin-top: 0px;
 }
 
 #back-up-button {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -747,9 +774,6 @@ header .container {
 
 /* index */
 
-#hero {
-  padding-top: 120px;
-}
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,11 +799,14 @@ header .container {
 #about h3:not(#contact h3) {
   margin-top: 0;
 }
+
 #about-me img {
   max-width: 300px;
+  padding: 0px;
 }
 .profile-pic {
   text-align: center;
+  padding-top: 40px;
 }
 
 #about .col-md-12 {
@@ -801,16 +828,13 @@ header .container {
   align-items: flex-start;
 }
 
-#about .container .header {
-  padding-left: 0;
-}
 #about .skills .col-md-12 {
   margin-right: 60px;
 }
 
 /* flashback */
 #fb-intro {
-  padding-top: 120px;
+  padding-top: 20px;
 }
 #fb-intro img {
   margin-bottom: 60px;
@@ -859,13 +883,6 @@ header .container {
 
 /* bazaar */
 
-#bz-intro {
-    padding-top: 120px;
-  }
-#bz-intro {
-  margin-top: -80px;
-}
-
 #bz-intro svg {
   width: 100%;
   max-width: 160px;
@@ -875,7 +892,7 @@ header .container {
 
 #bz-intro img {
   position: relative;
-  bottom: -74px;
+  bottom: -54px;
   right: -30px;
   margin-bottom: 0;
 }
@@ -930,8 +947,14 @@ header .container {
 }
 #bz-testing .iteration {
   position: relative;
-  bottom: -94px;
+  bottom: -74px;
   margin-top: -90px;
+}
+
+#bz-style-guide .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #bz-retrospective .col-md-12 {
@@ -955,8 +978,16 @@ header .container {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+main {
+  margin-top: 57px
+}
 
-  .container {
+
+.section {
+  padding: 40px 0;
+}
+
+.container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1028,9 +1059,6 @@ header div.container a {
 
 /* index */
 
-#hero {
-  padding-top: 140px;
-}
 
 #hero p {
   margin-bottom: 40px;
@@ -1073,7 +1101,8 @@ header div.container a {
 }
 
 #about .container .header {
-  padding-left: 0;
+  margin-top: 0;
+  margin-left: 60px;
 }
 
 #about .col-lg-7 {
@@ -1144,6 +1173,10 @@ header div.container a {
   height: auto;
   margin-bottom: -20px;
 }
+#bz-intro img {
+  bottom: -74px;
+  margin-bottom: 0;
+}
 
 #bz-process img{
   margin: 40px 0;
@@ -1186,6 +1219,10 @@ header div.container a {
 }
 #bz-testing .margin-right {
   margin-right: 30px;
+}
+#bz-testing .iteration {
+  bottom: -94px;
+  margin-top: -90px;
 }
 
 #bz-retrospective .col-lg-6 {
