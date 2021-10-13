@@ -348,26 +348,27 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
- /* animation */
 #fb-intro svg {
-  width: 100%;
-  max-width: 100%;
+  max-width: 200px;
   height: auto;
+  overflow: visible;
+  margin-bottom: 20px;
 }
 
+ /* animation */
 @keyframes flash-move {
-  from {transform: translate(-100px,0px);}
+  from {transform: translate(-180px,0px);}
   to {transform: translate(0px,0px);}
 }
 .flash-pink {
   animation: 700ms flash-move ease-out;
 }
 @keyframes back-move {
-  from {transform: translate(100px,0px);}
+  from {transform: translate(180px,0px);}
   to {transform: translate(0px,0px);}
 }
 .back-blue {
-  animation: 700ms back-move ease-out;
+  animation: 700ms back-move ease-in;
 }
 
 #fb-intro {
@@ -405,11 +406,11 @@ footer {
 
 #fb-intro ul>li>a:hover,
 #fb-intro ul>li>a:focus {
-  color: #FA4C98;
+  color: #FF71CB;
   text-decoration: underline;
 }
 #fb-intro ul>li>a:active {
-  color: #FA4C98;
+  color: #FF71CB;
 }
 #fb-intro h3 {
   margin: 10px;
@@ -715,6 +716,7 @@ nav {
 nav>ul>li {
   display: inline-block;
   margin-bottom: 4px;
+  min-width: 112px;
 }
 nav>ul>li>a,
 a:visited {
@@ -846,8 +848,37 @@ header .navtoggle {
 #fb-intro {
   padding-top: 20px;
 }
+
+/* animation */
+@keyframes flash-move {
+ from {transform: translate(-300px,0px);}
+ to {transform: translate(0px,0px);}
+}
+.flash-pink {
+ animation: 700ms flash-move ease-out;
+}
+@keyframes back-move {
+ from {transform: translate(300px,0px);}
+ to {transform: translate(0px,0px);}
+}
+.back-blue {
+ animation: 700ms back-move ease-in;
+}
+
+#fb-intro .row {
+  display: inline-block;
+  text-align: center;
+}
+
+#fb-intro svg {
+  max-width: 400px;
+  overflow: visible;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 #fb-intro img {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 #fb-intro ul>li {
   display: inline-block;
@@ -1127,12 +1158,34 @@ header div.container a {
 
 
 /* flashback */
+/* animation */
+@keyframes flash-move {
+ from {transform: translate(-700px,0px);}
+ to {transform: translate(0px,0px);}
+}
+.flash-pink {
+ animation: 1s flash-move ease-out;
+}
+@keyframes back-move {
+ from {transform: translate(700px,0px);}
+ to {transform: translate(0px,0px);}
+}
+.back-blue {
+ animation: 1s back-move ease-in;
+}
+
 #fb-intro h3 {
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 40px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#fb-intro svg {
+  width: 100%;
+  overflow: visible;
+  margin: 40px 0;
 }
 
 #fb-competitive .row {
