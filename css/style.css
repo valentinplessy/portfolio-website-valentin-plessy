@@ -407,7 +407,7 @@ footer {
 #fb-intro ul>li>a:hover,
 #fb-intro ul>li>a:focus {
   color: #FF71CB;
-  text-decoration: underline;
+  text-decoration: none;
 }
 #fb-intro ul>li>a:active {
   color: #FF71CB;
