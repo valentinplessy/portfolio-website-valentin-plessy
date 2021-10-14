@@ -151,10 +151,6 @@ top: -40px;
   padding: 0 15px;
 }
 
-.row {
-  margin: 25px 0;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -313,9 +309,10 @@ footer {
   text-align: center;
 }
 #about-me img {
-  max-width: 300px;
+  max-width: 250px;
   padding: 0 40px;
 }
+
 #about li::marker {
   color: #FA4C98;
 }
@@ -791,7 +788,15 @@ header .navtoggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .col-md-6 {
@@ -1112,6 +1117,7 @@ header div.container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: auto;
   justify-content: flex-end;
   margin-right: 2em;
 }
