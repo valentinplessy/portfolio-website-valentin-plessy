@@ -91,9 +91,8 @@ nav>ul {
 nav>ul>li>a,
 nav>ul>li>a:visited {
   padding: 0;
-  text-transform: uppercase;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   color: #000000;
 }
 
@@ -204,7 +203,7 @@ main {
   text-decoration: none;
 }
 
-/* footer */
+/* ------------ Footer ------------ */
 footer {
   background-color: #000000;
   text-align: center;
@@ -239,7 +238,7 @@ footer {
 
 
 
-/* index */
+/* ------------ Index ------------ */
 
 #hero {
   display: inline-block;
@@ -255,7 +254,7 @@ footer {
   margin-top: 15px;
 }
 
-#work .row {
+#work .row .column {
   padding-bottom: 20px;
 }
 #work img {
@@ -301,15 +300,15 @@ footer {
   animation: 800ms circle-move-reverse infinite alternate ease-out;
 }
 
-/* about */
+/* ------------ About ------------  */
 #about-me {
   padding-top: 20px;
 }
 #about-me h1 {
   text-align: center;
 }
+
 #about-me img {
-  max-width: 250px;
   padding: 0 40px;
 }
 
@@ -320,19 +319,14 @@ footer {
   font-size: 1.2em;
   margin-left: 20px;
 }
-#about .container .profile-pic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-}
+
 #about .container .header {
   padding-left: 0;
   margin-top: 20px;
 }
 
 
-/* flashback */
+/* ------------ Flashback ------------ */
 #flashback h1,
 #flashback h2 {
   background: -webkit-linear-gradient(#FFDB1F, #FA4C98);
@@ -500,12 +494,12 @@ footer {
   display: inline-block;
   width: 100%;
 }
-#fb-final-designs img {
+.final-designs img {
   display: inline-block;
   max-width: 700px;
   margin-bottom: 20px;
 }
-#fb-final-designs .fb-mockups {
+.final-designs {
   display: inline-block;
   text-align: center;
   margin-left: 15px;
@@ -531,7 +525,7 @@ footer {
   display: inline-grid;
 }
 
-/* bazaar */
+/* ------------ Bazaar ------------ */
 #bazaar nav>ul>li>a:hover,
 #bazaar a:focus {
   color: #FDCA40;
@@ -563,7 +557,7 @@ footer {
 
 #bz-intro img {
   position: relative;
-  bottom: -53px;
+  bottom: -28px;
   margin-bottom: 0;
 }
 
@@ -633,19 +627,12 @@ footer {
 
 #bz-testing .iteration {
   position: relative;
-  bottom: -73px;
+  bottom: -48px;
   margin-top: -60px;
 }
 
 #bz-final-designs {
   background-color: #FDCA40;
-  width: 100%;
-}
-
-#bz-final-designs img {
-  display: inline-block;
-  max-width: 700px;
-  margin-bottom: 20px;
 }
 
 .margin-top {
@@ -667,6 +654,111 @@ footer {
     color: #FA4C98;
     text-decoration: underline;
   }
+
+/* ------------ Pennywise ------------ */
+#pw-intro {
+  display: inline-block;
+  background-color: #232041;
+  width: 100%;
+}
+
+}
+#pw-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+#pw-menu ul>li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#pw-menu ul>li>a,
+#pw-menu a:visited {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFC153;
+}
+
+#pw-menu ul>li>a:hover,
+#pw-menu ul>li>a:focus,
+#pw-menu ul>li>a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+#pw-menu ul>li>a:active {
+  color: #ffffff;
+}
+#pw-menu h3 {
+  margin: 10px;
+}
+
+#pw-process,
+#pw-user-testing,
+#pw-responsive,
+#pw-retrospective {
+  display: inline-block;
+  background-color: #232041;
+  width: 100%;
+}
+#pw-objective h2,
+#pw-user-story h2,
+#pw-final-designs h2 {
+  color: #754EB7;
+}
+#pw-process h2,
+#pw-user-testing h2,
+#pw-responsive h2,
+#pw-retrospective h2 {
+  color: #FFC153;
+}
+#pw-process p,
+#pw-user-testing p,
+#pw-responsive p,
+#pw-retrospective p {
+  color: #ffffff;
+}
+#pw-objective a,
+#pw-objective a:visited,
+#pw-final-designs a,
+#pw-final-designs a:visited {
+  color: #754EB7;
+  text-decoration: none;
+}
+
+#pw-process img {
+  margin: 40px 0 20px;
+}
+
+#pw-user-story img {
+  margin-bottom: 10px;
+}
+
+#pw-user-testing .row {
+  display: inline-block;
+  text-align: center;
+}
+
+#pw-user-testing img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+#pw-responsive img {
+  margin-top: 20px;
+}
+
+#pw-final-designs .final {
+  position: relative;
+  bottom: -28px;
+  margin-bottom: 0;
+}
+
+#pennywise #contact h2 {
+  color: #ffffff;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -714,14 +806,13 @@ nav {
 nav>ul>li {
   display: inline-block;
   margin-bottom: 4px;
-  min-width: 112px;
+  min-width: 100px;
 }
 nav>ul>li>a,
 a:visited {
   padding-left: 20px;
-  text-transform: uppercase;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 200;
   color: #000000;
 }
 
@@ -742,6 +833,7 @@ top: -100px;
 .container {
   padding: 0 30px;
 }
+
 
 header {
   padding-top: 15px;
@@ -782,37 +874,37 @@ header .navtoggle {
   color: #ffffff;
 }
 
-/* index */
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .col-md-6 {
   width: 50%;
 }
 [class*="col-"] {
   float: left;
 }
-
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* about */
+/* ------------ Index ------------ */
+
+#work .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#work .row .column {
+  width: 48%;
+  align-items: center;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+
+
+/* ------------ About ------------ */
 
 #about h3:not(#contact h3) {
   margin-top: 0;
@@ -850,7 +942,7 @@ header .navtoggle {
   margin-right: 60px;
 }
 
-/* flashback */
+/* ------------ Flashback ------------ */
 #fb-intro {
   padding-top: 20px;
 }
@@ -888,6 +980,7 @@ header .navtoggle {
 }
 #fb-intro ul>li {
   display: inline-block;
+  text-align: center;
 }
 #fb-intro h3 {
   display: inline-block;
@@ -898,6 +991,9 @@ header .navtoggle {
 }
 
 #fb-challenge .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   align-items: center;
 }
 
@@ -911,7 +1007,7 @@ header .navtoggle {
   flex-direction: column;
 }
 
-#fb-wireframes {
+#fb-wireframes .row{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,7 +1024,7 @@ header .navtoggle {
   bottom: -40px;
 }
 
-/* bazaar */
+/* ------------ Bazaar ------------ */
 
 #bz-intro svg {
   width: 100%;
@@ -939,7 +1035,7 @@ header .navtoggle {
 
 #bz-intro img {
   position: relative;
-  bottom: -54px;
+  bottom: -29px;
   right: -30px;
   margin-bottom: 0;
 }
@@ -957,10 +1053,6 @@ header .navtoggle {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-}
-
-#bazaar [class*="col-"] {
-  padding: 0;
 }
 
 #bz-user-flow .col-md-12 {
@@ -994,7 +1086,7 @@ header .navtoggle {
 }
 #bz-testing .iteration {
   position: relative;
-  bottom: -74px;
+  bottom: -49px;
   margin-top: -90px;
 }
 
@@ -1021,6 +1113,67 @@ header .navtoggle {
   position: relative;
   left: 90px;
 }
+
+/* ------------ Pennywise ------------ */
+
+#pw-menu ul>li {
+  display: inline-block;
+  text-align: center;
+}
+#pw-menu h3 {
+  display: inline-block;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#pw-process .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#pw-process .branding {
+  display: inline-block;
+  text-align: center;
+}
+#pw-process img {
+  padding: 40px 0;
+}
+
+#pw-user-testing .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pw-user-testing .row .column {
+  width: 48%;
+  align-items: center;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+#pw-user-testing .caption {
+  display: inline-block;
+  text-align: center;
+  width: 90%;
+}
+
+#pw-final-designs .final {
+  bottom: -29px;
+}
+
+#pw-retrospective img {
+  margin: 40px 0;
+  padding: 0 80px;
+}
+
 }
 
 /* ==============================
@@ -1060,9 +1213,8 @@ a:focus {
 nav>ul>li>a,
 a:visited {
   padding: 0px;
-  text-transform: uppercase;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 200;
   color: #000000;
 }
 
@@ -1113,14 +1265,6 @@ header div.container a {
   margin-bottom: 40px;
 }
 
-#work picture, #work .svg-anim {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: auto;
-  justify-content: flex-end;
-  margin-right: 2em;
-}
 
 /* about */
 #about-me h1 {
@@ -1164,7 +1308,7 @@ header div.container a {
 }
 
 
-/* flashback */
+/* ------------ Flashback ------------ */
 /* animation */
 @keyframes flash-move {
  from {transform: translate(-700px,0px);}
@@ -1233,7 +1377,7 @@ header div.container a {
   margin-bottom: 60px;
 }
 
-/* bazaar */
+/* ------------ Bazaar ------------ */
 #bazaar nav>ul>li>a:hover,
 #bazaar a:focus {
   color: #FDCA40;
@@ -1250,7 +1394,7 @@ header div.container a {
   margin-bottom: -20px;
 }
 #bz-intro img {
-  bottom: -74px;
+  bottom: -49px;
   margin-bottom: 0;
 }
 
@@ -1297,7 +1441,7 @@ header div.container a {
   margin-right: 30px;
 }
 #bz-testing .iteration {
-  bottom: -94px;
+  bottom: -69px;
   margin-top: -90px;
 }
 
@@ -1326,6 +1470,89 @@ header div.container a {
   margin-top: 60px;
   padding-right: 600px;
 }
+
+/* ------------ Pennywise ------------ */
+
+#pennywise .col-lg-6 {
+  width: 50%;
+}
+
+#pennywise .intro {
+  width: 70%;
+}
+
+#pw-process .row,
+#pw-final-designs .row,
+#pw-retrospective .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+#pw-user-story .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#pw-process .margin-left,
+#pw-final-designs .margin-left,
+#pw-retrospective .margin-left,
+#pw-user-story .margin-left {
+  margin-left: 30px;
+}
+#pw-process .margin-right,
+#pw-final-designs .margin-right,
+#pw-retrospective .margin-right,
+#pw-user-story .margin-right {
+  margin-right: 30px;
+}
+
+#pw-process img {
+  padding: 60px 40px 0;
+}
+
+#pw-user-story img {
+  margin-top: 70px;
+}
+
+#pw-user-testing .row {
+  margin-top: 40px;
+}
+#pw-user-testing .row .column {
+  width: 25%;
+}
+
+#pw-user-testing .caption {
+  display: inline-block;
+  text-align: center;
+  width: 75%;
+}
+
+#pw-user-testing .second {
+  margin-top: 80px;
+}
+#pw-user-testing .third {
+  margin-top: 160px;
+}
+#pw-user-testing .fourth {
+  margin-top: 260px;
+}
+
+#pw-final-designs .final {
+  bottom: -49px;
+  right: -140px;
+}
+
+#pw-retrospective img {
+  margin: 80px 0;
+  padding: 0 200px;
+}
+
 }
 
 /* ==============================
