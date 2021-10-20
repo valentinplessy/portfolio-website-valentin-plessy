@@ -76,14 +76,14 @@ header {
   padding-bottom: 4px;
   position: fixed;
   width: 100%;
-  box-shadow: 0px 11px 17px 0px rgba(50, 50, 50, 0.49);
   z-index: 99;
   top: 0;
-  transition: top 0.5s ease-in-out;
+  transition: top 0.3s ease-out;
 }
 
 nav>ul {
   list-style-type: none;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
@@ -91,7 +91,8 @@ nav>ul {
 nav>ul>li>a,
 nav>ul>li>a:visited {
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 2.5;
   font-weight: 200;
   color: #000000;
 }
@@ -99,7 +100,6 @@ nav>ul>li>a:visited {
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
   color: #FA4C98;
-  font-weight: 700;
 }
 
 nav>ul>li>a:active {
@@ -116,7 +116,7 @@ nav>ul>li>a:active {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 5px;
+  top: -3px;
   font-size: 18px;
   padding-right: 0;
 }
@@ -129,11 +129,11 @@ nav>ul>li>a:active {
   padding: 0 0 10px;
 }
 .nav-up {
-top: -40px;
+top: -180px;
 }
 
 .logo {
-  max-width: 160px;
+  max-width: 190px;
   margin-top: 12px;
 }
 
@@ -174,7 +174,7 @@ main {
   bottom: 15px;
   right: 15px;
   z-index: 99;
-  font-size: 14px;
+  font-size: 20px;
   border: none;
   outline: none;
   background-color: #ffffff;
@@ -184,7 +184,7 @@ main {
   opacity: 70%;
   font-weight: 300;
   cursor: pointer;
-  padding: 10px;
+  padding: 15px;
 }
 
 #back-up-button:hover {
@@ -205,7 +205,6 @@ main {
 
 /* ------------ Footer ------------ */
 footer {
-  background-color: #000000;
   text-align: center;
   position: relative;
   width: 100%;
@@ -214,12 +213,6 @@ footer {
   display: inline-block;
   padding: 20px 0;
   width: 100%;
-}
-
-#contact h3,
-#contact p {
-  color: #ffffff;
-  text-align: center;
 }
 
 #contact svg {
@@ -242,24 +235,26 @@ footer {
 
 #hero {
   display: inline-block;
-  background-color: #000000;
   width: 100%;
 }
-#hero h1,
-#hero p {
-  color: #ffffff;
-}
+
 #hero span {
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 #work .row .column {
-  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
 }
 #work img {
   display: inline-block;
-  max-width: 300px;
+  max-width: 250px;
 }
 #work h3 {
   margin-top: 2;
@@ -271,7 +266,7 @@ footer {
 }
 #work svg {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
 }
 
@@ -643,17 +638,7 @@ footer {
   margin-top: 20px;
 }
 
-#bazaar #contact a,
-#bazaar #contact a:visited {
-    color: #FDCA40;
-    text-decoration: none;
-  }
 
-#bazaar #contact a:hover,
-#bazaar #contact a:focus {
-    color: #FA4C98;
-    text-decoration: underline;
-  }
 
 /* ------------ Pennywise ------------ */
 #pw-intro {
@@ -806,7 +791,7 @@ nav {
 nav>ul>li {
   display: inline-block;
   margin-bottom: 4px;
-  min-width: 100px;
+  min-width: 80px;
 }
 nav>ul>li>a,
 a:visited {
@@ -859,14 +844,14 @@ header .navtoggle {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 22px;
   border: none;
   outline: none;
   background-color: #ffffff;
   color: #000000;
   font-weight: 300;
   cursor: pointer;
-  padding: 10px;
+  padding: 20px;
 }
 
 #back-up-button:hover {
@@ -893,6 +878,7 @@ header .navtoggle {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #work .row .column {
@@ -900,6 +886,8 @@ header .navtoggle {
   align-items: center;
   margin-bottom: 3em;
   text-align: center;
+  justify-content: flex-start;
+
 }
 
 
@@ -1129,6 +1117,13 @@ header .navtoggle {
   margin-right: 10px;
 }
 
+#pw-objective .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
 #pw-process .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1208,6 +1203,7 @@ a:focus {
 
 .logo {
   max-width: 250px;
+  margin-top: 0;
 }
 
 nav>ul>li>a,
@@ -1222,8 +1218,7 @@ a:visited {
 header div.container a {
     text-decoration: none;
     color: #000000;
-    margin: 0px 5px;
-    padding: 2px 6px;
+    margin: 0;
     position: relative;
     z-index: 0;
     cursor: pointer;
@@ -1263,6 +1258,15 @@ header div.container a {
 
 #hero p {
   margin-bottom: 40px;
+}
+
+#work .row .column {
+  width: 30%;
+  align-items: center;
+  margin-bottom: 3em;
+  text-align: center;
+  justify-content: flex-start;
+
 }
 
 
@@ -1559,6 +1563,23 @@ header div.container a {
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
+  #work .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #work .row .column {
+    width: 30%;
+    align-items: center;
+    margin-bottom: 3em;
+    text-align: center;
+    justify-content: flex-start;
+
+  }
 }
 
 /* buttons */
@@ -1588,9 +1609,9 @@ X-large devices (1440px or larger)
 
 .button.contact {
   background-color: transparent;
-  color: #009FFD;
+  color: #000000;
   text-transform: uppercase;
-  border: 1px solid #009FFD;
+  border: 1px solid #000000;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -1598,25 +1619,10 @@ X-large devices (1440px or larger)
 .button.contact:hover,
 .button.contact:focus,
 .button.contact:active {
-  background-color: #009FFD;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-#bazaar #contact .button.contact {
-  background-color: transparent;
-  color: #FDCA40;
-  text-transform: uppercase;
-  border: 1px solid #FDCA40;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-#bazaar #contact .button.contact:hover,
-.button.contact:focus,
-.button.contact:active {
-  background-color: #FDCA40;
-  color: #000000;
-}
 
 .button.resume {
   background-color: transparent;
