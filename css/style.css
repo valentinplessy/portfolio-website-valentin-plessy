@@ -17,6 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 200;
+  letter-spacing: 0.01em;
   line-height: 1.7;
   color: #000000;
 }
@@ -164,6 +165,21 @@ top: -180px;
   white-space: nowrap;
 }
 
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.menu ul>li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu h3 {
+  margin: 10px;
+}
+
 main {
   margin-top: 37.75px;
 }
@@ -210,6 +226,9 @@ footer {
   width: 100%;
 }
 #contact {
+  font-weight: 300;
+}
+#contact {
   display: inline-block;
   padding: 20px 0;
   width: 100%;
@@ -221,7 +240,7 @@ footer {
   margin-right:10px;
 }
 
-#social {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,17 +391,7 @@ footer {
   margin: 10px 0;
 }
 
-#fb-intro ul {
-  list-style-type: none;
-  padding: 0;
-}
-#fb-intro ul>li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+
 #fb-intro ul>li>a,
 #fb-intro a:visited {
   text-transform: uppercase;
@@ -399,9 +408,7 @@ footer {
   color: #FF71CB;
   text-decoration: none;
 }
-#fb-intro h3 {
-  margin: 10px;
-}
+
 #fb-intro .mockup img {
   display: inline-block;
   max-width: 700px;
@@ -485,8 +492,9 @@ footer {
   max-width: 700px;
 }
 
-#fb-final-designs {
+.final-designs {
   display: inline-block;
+  text-align: center;
   width: 100%;
 }
 .final-designs img {
@@ -502,6 +510,7 @@ footer {
   margin-top: 20px;
 }
 
+
 #fb-retrospective {
   display: inline-block;
   background-color: #211C36;
@@ -516,6 +525,13 @@ footer {
   bottom: -30px;
 }
 
+#fb-retrospective img {
+  display: inline-block;
+  max-width: 700px;
+  margin-top: -20px;
+  position: relative;
+  bottom: -20px;
+}
 .center {
   display: inline-grid;
 }
@@ -562,17 +578,7 @@ footer {
   background-color: #FDCA40;
   width: 100%;
 }
-#bz-menu ul {
-  list-style-type: none;
-  padding: 0;
-}
-#bz-menu ul>li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+
 #bz-menu ul>li>a,
 #bz-menu a:visited {
   text-transform: uppercase;
@@ -589,9 +595,7 @@ footer {
 #bz-menu ul>li>a:active {
   color: #ffffff;
 }
-#bz-menu h3 {
-  margin: 12px;
-}
+
 
 #bz-challenge a,
 #bz-challenge a:visited,
@@ -626,6 +630,11 @@ footer {
   margin-top: -60px;
 }
 
+#bz-style-guide .guide img {
+  width: 85%;
+  margin-top: 40px;
+}
+
 #bz-final-designs {
   background-color: #FDCA40;
 }
@@ -643,22 +652,11 @@ footer {
 /* ------------ Pennywise ------------ */
 #pw-intro {
   display: inline-block;
+  text-align: center;
   background-color: #232041;
   width: 100%;
 }
 
-}
-#pw-menu ul {
-  list-style-type: none;
-  padding: 0;
-}
-#pw-menu ul>li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 #pw-menu ul>li>a,
 #pw-menu a:visited {
   text-transform: uppercase;
@@ -675,9 +673,7 @@ footer {
 #pw-menu ul>li>a:active {
   color: #ffffff;
 }
-#pw-menu h3 {
-  margin: 10px;
-}
+
 
 #pw-process,
 #pw-user-testing,
@@ -740,9 +736,7 @@ footer {
   margin-bottom: 0;
 }
 
-#pennywise #contact h2 {
-  color: #ffffff;
-}
+
 
 
 /* ==============================
@@ -871,6 +865,18 @@ header .navtoggle {
   display: table;
 }
 
+.menu ul>li {
+  display: inline-block;
+  text-align: center;
+}
+.menu h3 {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 /* ------------ Index ------------ */
 
 #work .row {
@@ -966,17 +972,6 @@ header .navtoggle {
 #fb-intro img {
   margin-bottom: 40px;
 }
-#fb-intro ul>li {
-  display: inline-block;
-  text-align: center;
-}
-#fb-intro h3 {
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
 #fb-challenge .row {
   display: -webkit-box;
@@ -1004,13 +999,6 @@ header .navtoggle {
   margin: 0 9px;
 }
 
-#fb-retrospective img {
-  display: inline-block;
-  max-width: 700px;
-  margin-top: -20px;
-  position: relative;
-  bottom: -40px;
-}
 
 /* ------------ Bazaar ------------ */
 
@@ -1028,9 +1016,7 @@ header .navtoggle {
   margin-bottom: 0;
 }
 
-#bz-menu ul>li {
-  display: inline-block;
-}
+
 
 #bz-process img{
   margin: 20px 0;
@@ -1085,6 +1071,9 @@ header .navtoggle {
   flex-direction: row;
   align-items: center;
 }
+#bz-style-guide .guide img {
+  margin-top: 0;
+}
 
 #bz-retrospective .col-md-12 {
   width: 100%;
@@ -1104,18 +1093,7 @@ header .navtoggle {
 
 /* ------------ Pennywise ------------ */
 
-#pw-menu ul>li {
-  display: inline-block;
-  text-align: center;
-}
-#pw-menu h3 {
-  display: inline-block;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+
 
 #pw-objective .row {
   display: -webkit-box;
@@ -1204,6 +1182,17 @@ a:focus {
 .logo {
   max-width: 250px;
   margin-top: 0;
+}
+
+.margin-left {
+  margin-left: 30px;
+}
+.margin-right {
+  margin-right: 30px;
+}
+
+.intro {
+  width: 65%;
 }
 
 nav>ul>li>a,
@@ -1365,10 +1354,10 @@ header div.container a {
 #fb-competitive .col-lg-5 {
   width: 42%;
 }
-#fb-competitive .margin-right {
+#fb-competitive .margin-right-solo {
   margin-right: 60px;
 }
-#fb-competitive .margin-left {
+#fb-competitive .margin-left-solo {
   margin-left: 60px;
 }
 
@@ -1379,6 +1368,14 @@ header div.container a {
 .bottom-text {
   margin-top: 40px;
   margin-bottom: 60px;
+}
+
+#fb-retrospective img {
+  display: inline-block;
+  max-width: 700px;
+  margin-top: -20px;
+  position: relative;
+  bottom: -40px;
 }
 
 /* ------------ Bazaar ------------ */
@@ -1424,12 +1421,6 @@ header div.container a {
   flex-direction: row;
 }
 
-#bz-native .margin-right {
-  margin-right: 30px;
-}
-#bz-native .margin-left {
-  margin-left: 30px;
-}
 
 #bz-testing .col-lg-6 {
   width: 50%;
@@ -1441,12 +1432,14 @@ header div.container a {
   align-items: center;
   flex-direction: row;
 }
-#bz-testing .margin-right {
-  margin-right: 30px;
-}
+
 #bz-testing .iteration {
   bottom: -69px;
   margin-top: -90px;
+}
+
+#bz-style-guide .guide img {
+  width: 80%;
 }
 
 #bz-retrospective .col-lg-6 {
@@ -1464,11 +1457,7 @@ header div.container a {
   left: 250px;
   margin-top: 40px;
 }
-#bz-retrospective .margin-right {
-  margin-right: 30px;
-}
-#bz-retrospective .margin-left {
-  margin-left: 30px;
+
 }
 #bz-retrospective .final-quote {
   margin-top: 60px;
@@ -1481,9 +1470,7 @@ header div.container a {
   width: 50%;
 }
 
-#pennywise .intro {
-  width: 70%;
-}
+
 
 #pw-process .row,
 #pw-final-designs .row,
@@ -1503,18 +1490,6 @@ header div.container a {
   flex-direction: row;
 }
 
-#pw-process .margin-left,
-#pw-final-designs .margin-left,
-#pw-retrospective .margin-left,
-#pw-user-story .margin-left {
-  margin-left: 30px;
-}
-#pw-process .margin-right,
-#pw-final-designs .margin-right,
-#pw-retrospective .margin-right,
-#pw-user-story .margin-right {
-  margin-right: 30px;
-}
 
 #pw-process img {
   padding: 60px 40px 0;
@@ -1541,7 +1516,7 @@ header div.container a {
   margin-top: 80px;
 }
 #pw-user-testing .third {
-  margin-top: 160px;
+  margin-top: 140px;
 }
 #pw-user-testing .fourth {
   margin-top: 260px;
