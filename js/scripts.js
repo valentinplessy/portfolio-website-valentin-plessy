@@ -34,11 +34,11 @@ function hasScrolled () {
     }
   }
 
-  lastScrollTop = st;
+  lastScrollTop = st
 }
 
 // -------------- Floating back to top button --------------
-var mybutton = document.getElementById('back-up-button');
+var mybutton = document.getElementById('back-up-button')
 window.onscroll = function () {
   scrollFunction()
 }
@@ -52,8 +52,8 @@ function scrollFunction () {
 }
 
 function topFunction () {
-  document.body.scrollTop = 580
-  document.documentElement.scrollTop = 580
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
 }
 
 // -------------- Hamburger Menu --------------
@@ -66,7 +66,6 @@ function menuToggle () {
   }
 }
 
-
 // -------------- Smooth scroll --------------
 // Select all links with hashes
 $('a[href*="#"]')
@@ -76,8 +75,7 @@ $('a[href*="#"]')
   .click(function (event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
-      &&
+      location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
       location.hostname === this.hostname
     ) {
       // Figure out element to scroll to
