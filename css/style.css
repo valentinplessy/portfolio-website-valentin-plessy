@@ -600,8 +600,8 @@ footer {
   width: 100%;
 }
 
-#bz-menu nav > ul > li > a,
-#bz-menu a:visited {
+#bz-menu ul > li > a,
+#bz-menu ul > li > a:visited {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
