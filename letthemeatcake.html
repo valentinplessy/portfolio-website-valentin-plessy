@@ -3,25 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About Valentin Plessy</title>
+  <title>Let Them Eat Cake! Responsive recipe web app</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/3ca509e50f.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,900;1,200&display=swap" rel="stylesheet">
 </head>
 
 <body id="ltec">
+
+  <button onclick="topFunction()" id="back-up-button" title="Go to top"><a href="#ltec-intro">↑</a></button>
+
   <header id="header">
     <div class="container">
-      <img class="logo" src="img/logo.svg" alt="Logo Valentin Plessy">
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a class="logo" href="index.html"><img class="logo" src="img/logoyellow.svg" alt="Logo Valentin Plessy"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -109,5 +116,8 @@
     </div>
   </footer>
 </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </html>
