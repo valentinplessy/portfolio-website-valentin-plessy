@@ -120,13 +120,14 @@ nav > ul > li > a:active {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: -3px;
-  font-size: 18px;
+  top: -7.7px;
+  font-size: 24px;
   padding-right: 0;
 }
 
 .navtoggle.responsive li {
   display: block;
+  margin-top: 10px;
   transition: 0.4s;
 }
 
@@ -135,11 +136,11 @@ nav > ul > li > a:active {
 }
 
 .nav-up {
-  top: -180px;
+  top: -220px;
 }
 
 .logo {
-  max-width: 190px;
+  max-width: 220px;
   margin-top: 12px;
 }
 
@@ -703,16 +704,16 @@ footer {
   width: 100%;
 }
 
-#pw-objective h2,
-#pw-user-story h2,
-#pw-final-designs h2 {
+#pw-objective h3,
+#pw-user-story h3,
+#pw-final-designs h3 {
   color: #754eb7;
 }
 
-#pw-process h2,
-#pw-user-testing h2,
-#pw-responsive h2,
-#pw-retrospective h2 {
+#pw-process h3,
+#pw-user-testing h3,
+#pw-responsive h3,
+#pw-retrospective h3 {
   color: #ffc153;
 }
 
@@ -1119,6 +1120,10 @@ footer {
   }
 
   /* ------------ Pennywise ------------ */
+  #pw-intro img {
+    width: 80%;
+  }
+
   #pw-objective .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1483,6 +1488,10 @@ footer {
   /* ------------ Pennywise ------------ */
   #pennywise .col-lg-6 {
     width: 50%;
+  }
+
+  #pw-intro img {
+    width: 70%;
   }
 
   #pw-process .row,
