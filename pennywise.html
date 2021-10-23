@@ -3,65 +3,293 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About Valentin Plessy</title>
+  <title>Pennywise - Money-saving native app</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.png" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/3ca509e50f.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;0,900;1,200&display=swap" rel="stylesheet">
 </head>
 
 <body id="pennywise">
+
+  <button onclick="topFunction()" id="back-up-button" title="Go to top"><a href="#pw-intro">↑</a></button>
+
   <header id="header">
     <div class="container">
-      <img class="logo" src="img/logo.svg" alt="Logo Valentin Plessy">
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a class="logo" href="index.html"><img class="logo" src="img/logo_pink.svg" alt="Logo Valentin Plessy"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
-    <div id="pw-intro">
+    <!-- Intro -->
+    <div class="section" id="pw-intro">
+      <!-- columns -->
       <div class="container">
+        <picture>
+          <source srcset="img/pennywise/1_pw_intro_mockup@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/1_pw_intro_mockup@2x.png" alt="Pennywise Logo">
+        </picture>
+      </div>
+      <!-- Menu -->
+      <div id="pw-menu" class="container menu">
+        <ul>
+          <li><a href="#pw-objective">
+              <h3>Objective</h3>
+            </a></li>
+          <li><a href="#pw-process">
+              <h3>Process</h3>
+            </a></li>
+          <li><a href="#pw-final-designs">
+              <h3>Final Designs</h3>
+            </a></li>
+          <li><a href="#pw-retrospective">
+              <h3>Retrospective</h3>
+            </a></li>
+        </ul>
       </div>
     </div>
-
-    <div id="pw-challenge">
+    <!-- Objective -->
+    <div class="section" id="pw-objective">
+      <!-- columns -->
       <div class="container">
+        <h2> OBJECTIVE </h2>
+        <!-- column 1 -->
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <p> I was asked to create a financial tool for people to save money quickly. The tool should help users personalize their experience and advise them on how to reach their goals in a simple and efficient manner. </p>
+            <h4> “Don’t be afraid, it’s just savings!” </h4>
+            <p> Dealing with finance and its vocabulary can be daunting, that‘s why I created a native iOS app where trust, clarity, and motivation prevail. </p>
+            <p> You can view the full prototype <a href="https://marvelapp.com/prototype/2b54db56/screen/81694676">here.</a></p>
+          </div>
+          <!-- column 2 -->
+          <div class="col-md-6">
+            <div style="padding:123.99% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/592796300?h=3e353e15e6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; picture-in-picture"
+                allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Pennywise - Native iOS Prototype"></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div id="pw-process">
+    <!-- Branding -->
+    <div class="section" id="pw-process">
+      <!-- columns -->
       <div class="container">
+        <h2> BUILDING A COHESIVE BRAND </h2>
+        <!-- column 1 -->
+        <div class="row">
+          <div class="col-md-12 col-lg-6 margin-right">
+            <p> First, I approached the building of my digital product with branding. </p>
+            <p> Most competitor apps I’ve looked into have a very serious approach, to the point that they sometimes feel austere. I wanted my app to be fun without sacrificing the trust people need to have using it. </p>
+          </div>
+          <div class="col-md-12 col-lg-6 margin-left">
+            <p> I instantly thought of "pennywise" for the name: not only is it an old expression, but it is also a wink to Stephen King’s <i>It</i> which made clowns and balloons scarier than ever. Balloons shouldn’t be scary and neither should
+              taking care
+              of your finances! </p>
+            <p> Comic-based imagery would also allow me to give that little bit of fun I was looking for. </p>
+          </div>
+        </div>
+        <div class="container branding">
+          <picture>
+            <source srcset="img/pennywise/3_pw_branding@1x.png" media="(max-width:767px)">
+            <source srcset="img/pennywise/3_pw_branding@2x.png" media="(max-width:900px)"><img src="img/pennywise/3_pw_branding@3x.png" alt="Pennywise - Branding">
+          </picture>
+        </div>
       </div>
     </div>
-
-    <div id="pw-final-designs">
+    <!-- User Stories -->
+    <div class="section" id="pw-user-story">
+      <!-- columns -->
       <div class="container">
+        <h2> USER STORIES & WIREFRAMES </h2>
+        <div class="intro">
+          <p> After building my brand, I chose three users stories from the brief and created flows accordingly. I gathered ideas for UI patterns and worked on wireframes. </p>
+        </div>
+        <!-- column 1 -->
+        <div class="row">
+          <div class="col-md-12 col-lg-5 margin-right">
+            <h4> USER STORY 1 </h4>
+            <p> As a new user, I need to be able to create a profile, so that the financial advice I receive is personalized to me, my spending habits, and tailored to my goals. </p>
+            <h4> USER STORY 2 </h4>
+            <p> As a user, I need to be able to tell the tool what my savings goal is and how long I have to reach it so that I can save accordingly. </p>
+            <h4> USER STORY 3 </h4>
+            <p> As a money-saver, I need to be able to input information on the money I am receiving and spending (and on what) so that I can see an overview of my finances. </p>
+          </div>
+          <div class="col-md-12 col-lg-7 margin-left">
+            <picture>
+              <source srcset="img/pennywise/4_pw_low_fid@1x.png" media="(max-width:767px)">
+              <img src="img/pennywise/4_pw_low_fid@2x.png" alt="Pennywise - Low-fidelity wireframes">
+            </picture>
+            <picture>
+              <source srcset="img/pennywise/4_pw_mid_fid@1x.png" media="(max-width:767px)">
+              <img src="img/pennywise/4_pw_mid_fid@2x.png" alt="Pennywise - Mid-fidelity wireframes">
+            </picture>
+          </div>
+        </div>
+        <picture>
+          <source srcset="img/pennywise/5_pw_mockups@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/5_pw_mockups@2x.png" alt="Pennywise - Mockups">
+        </picture>
       </div>
     </div>
-
-    <div id="pw-retrospective">
+    <!-- User Testing -->
+    <div class="section" id="pw-user-testing">
       <div class="container">
+        <h2> USER TESTING </h2>
+        <div class="intro">
+          <p> I tested my mid-fidelity prototype using the above stories. Testers enjoyed the simplicity of the app while achieving tasks without struggle. </p>
+          <p> Nevertheless, in all testings, recurrent problems came up: </p>
+        </div>
+        <div class="row">
+          <div class="column first">
+            <p class="caption"> <b style="font-weight: 300; color: #FFC153"> "What are <i class="fas fa-plus-circle"></i> and <i class="fas fa-minus-circle"></i> for? Does it mean I can play around with the amount of my current balance?" </b></p>
+            <p class="caption"><b style="font-weight: 700">Solution:</b> <br> Replace icons by two distinct call-to-action buttons ↓</p>
+            <picture>
+              <source srcset="img/pennywise/6.1_pw_solution@1x.png" media="(max-width:767px)">
+              <img src="img/pennywise/6.1_pw_solution@2x.png" alt="Pennywise Solutions">
+            </picture>
+          </div>
+          <div class="column second">
+            <p class="caption"> <b style="font-weight: 300; color: #FFC153"> "I should be able to link my bank account to keep track of all my electronic transactions." </b></p>
+            <p class="caption"><b style="font-weight: 700">Solution:</b> <br> Add hyperlink when users personalize their profile ↓</p>
+            <picture>
+              <source srcset="img/pennywise/6.2_pw_solution@1x.png" media="(max-width:767px)">
+              <img src="img/pennywise/6.2_pw_solution@2x.png" alt="Pennywise Solutions">
+            </picture>
+          </div>
+          <div class="column third">
+            <p class="caption"> <b style="font-weight: 300; color: #FFC153"> "I will need a reminder to input my cash transactions of the day." </b></p>
+            <p class="caption"><b style="font-weight: 700">Solution:</b> <br> Add daily reminders to input cash ins and outs ↓</p>
+            <picture>
+              <source srcset="img/pennywise/6.3_pw_solution@1x.png" media="(max-width:767px)">
+              <img src="img/pennywise/6.3_pw_solution@2x.png" alt="Pennywise Solutions">
+            </picture>
+          </div>
+          <div class="column fourth">
+            <p class="caption"> <b style="font-weight: 300; color: #FFC153"> "How do I know I have enough money left for my savings goals?" </b></p>
+            <p class="caption"><b style="font-weight: 700">Solution:</b> <br> Add notification when users start the app ↓</p>
+            <picture>
+              <source srcset="img/pennywise/6.4_pw_solution@1x.png" media="(max-width:767px)">
+              <img src="img/pennywise/6.4_pw_solution@2x.png" alt="Pennywise Solutions">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Final Design -->
+    <div class="section" id="pw-final-designs">
+      <div class="container">
+        <h2> FINAL DESIGNS </h2>
+        <div class="intro">
+          <p> Thanks to this precious feedback, I have found better solutions and perfected my designs. </p>
+          <p> You can view the full prototype <a href="https://marvelapp.com/prototype/2b54db56/screen/81694676">here</a>.</p>
+        </div>
+      </div>
+      <div class="container final-designs" style="display: block; margin: auto;">
+        <p class="caption"> Personalize your experience once you've created your account ↓ </p>
+        <picture>
+          <source srcset="img/pennywise/7.1_pw_final_design@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/7.1_pw_final_design@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+        <p class="caption"> Review your personal datas and enjoy our dashboard for newcomers ↓ </p>
+        <picture>
+          <source srcset="img/pennywise/7.2_pw_final_design@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/7.2_pw_final_design@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+        <p class="caption"> Input details and set a deadline for your goal ↓ </p>
+        <picture>
+          <source srcset="img/pennywise/7.3_pw_final_design@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/7.3_pw_final_design@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+        <p class="caption"> Choose the frequency at which you’ll be saving and review the details of your goal ↓ </p>
+        <picture>
+          <source srcset="img/pennywise/7.4_pw_final_design@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/7.4_pw_final_design@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+        <p class="caption"> See the status of your goal, add money, edit or delete it. Enjoy a clear dashboard and see where you’re at instantly ↓ </p>
+        <picture>
+          <source srcset="img/pennywise/7.5_pw_final_design@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/7.5_pw_final_design@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+        <p class="caption"> Input the cash ins and outs of your day. See the status of all your current goals on one screen ↓ </p>
+        <picture>
+          <source srcset="img/pennywise/7.6_pw_final_design@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/7.6_pw_final_design@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+        <p class="caption"> Be sure you always have enough for your savings goals ↓ </p>
+        <picture>
+          <source srcset="img/pennywise/7.7_pw_final_design@1x.png" media="(max-width:767px)">
+          <img class="final" src="img/pennywise/7.7_pw_final_design@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+      </div>
+    </div>
+    <!-- Responsive -->
+    <div class="section" id="pw-responsive">
+      <div class="container">
+        <h2> CREATING A RESPONSIVE <br> PROMOTIONAL PAGE </h2>
+        <p> Finally, I created a responsive landing page to promote <b style="font-weight: 700">penny</b><i>wise</i>. With a brief description and the key features, the app was ready for the world to see! </p>
+      </div>
+      <div class="container">
+        <picture>
+          <source srcset="img/pennywise/8.1_pw_responsive@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/8.1_pw_responsive@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+      </div>
+    </div>
+    <!-- Responsive mockups -->
+    <div class="section" id="pw-responsive-mockups">
+      <div class="container">
+        <picture>
+          <source srcset="img/pennywise/8.2_pw_responsive@1x.png" media="(max-width:767px)">
+          <img src="img/pennywise/8.2_pw_responsive@2x.png" alt="Pennywise - Final Designs">
+        </picture>
+      </div>
+    </div>
+    <!-- Retrospective -->
+    <div class="section" id="pw-retrospective">
+      <div class="container">
+        <h2> RETROSPECTIVE </h2>
+        <div class="row">
+          <div class="col-md-12 col-lg-6 margin-right">
+            <p> We cannot stress enough the importance of user research when working on a digital product. Testing as early (and often) as possible is essential. Findings gathered during research have shed light on the needs and frustrations I had
+              overlooked. I had to change a few components after testing, or design solutions that seemed evident only to me. This helped gain and improve the app’s cohesiveness. </p>
+          </div>
+          <div class="col-md-12 col-lg-6 margin-left">
+            <p> On the other hand, I felt like fish in water when working on branding. Along with the UI aspects, it is definitely the process I enjoy the most. Testers and peers praised the aesthetics and thought the product had a highly
+              recognizable identity. After all, I wanted to step away from the all-too-serious approach of common financial tools, and I think <b style="font-weight: 700">penny</b><i>wise</i> succeeds in doing so. </p>
+          </div>
+        </div>
+        <div class="container">
+          <picture>
+            <source srcset="img/pennywise/9_pw_final_mockup@1x.png" media="(max-width:767px)">
+            <img src="img/pennywise/9_pw_final_mockup@2x.png" alt="Pennywise - Final Designs">
+          </picture>
+        </div>
       </div>
     </div>
   </main>
 
   <footer id="contact">
     <div class="container">
-      <h2> Let's talk </h2>
+      <h3> Let's talk </h3>
       <p>
         Want to collaborate or discuss my work? Feel free to call: <a href="tel:+4917681182670">+49 176 81182670</a>, or send an email.
       </p>
       <div>
         <a href="mailto:valplessy@gmail.com" class="button contact">send email</a>
       </div>
-      <div>
+      <div class="social">
         <a href="https://www.linkedin.com/in/valentin-plessy" target="_blank">
           <svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>linkedin_logo</title>
@@ -108,6 +336,10 @@
       <p> © 2021 Valentin Plessy </p>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
