@@ -375,26 +375,35 @@ footer {
   padding-top: 20px;
 }
 
+.profile-pic {
+  text-align: center;
+  padding: 40px 0;
+}
+
 #about-me h1 {
   text-align: center;
 }
 
 #about-me img {
-  padding: 0 40px;
+  max-width: 300px;
+}
+
+#about-me span {
+  display: block;
+  margin-top: 10px;
 }
 
 #about li::marker {
   color: #fa4c98;
 }
 
-#about h3:not(footer h3) {
-  font-size: 1.2em;
-  margin-left: 20px;
+#about li {
+  margin-left: -20px;
+  padding-left: 10px;
 }
 
 #about .container .header {
-  padding-left: 0;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /* ------------ Flashback ------------ */
@@ -443,7 +452,7 @@ footer {
 
 #fb-intro {
   text-align: center;
-  background-color: #211c36;
+  background-color: #361d42;
   width: 100%;
 }
 
@@ -457,12 +466,13 @@ footer {
 #fb-intro a:visited {
   text-transform: uppercase;
   font-weight: 700;
-  color: #66d1ff;
+  color: #ff71cb;
 }
 
 #fb-intro ul > li > a:hover,
 #fb-intro ul > li > a:focus {
-  color: #ff71cb;
+  color: #66d1ff;
+  text-shadow: 3px 3px #000;
   text-decoration: none;
 }
 
@@ -483,25 +493,9 @@ footer {
   width: 100%;
 }
 
-#fb-challenge a,
-#fb-challenge a:visited,
-#fb-final-designs a,
-#fb-final-designs a:visited {
-  color: #009ffd;
-  text-decoration: none;
-}
-
-#fb-challenge a:focus,
-#fb-challenge a:hover,
-#fb-final-designs a:hover,
-#fb-final-designs a:focus {
-  color: #009ffd;
-  text-decoration: underline;
-}
-
 #fb-process {
   display: inline-block;
-  background-color: #211c36;
+  background-color: #361d42;
   width: 100%;
 }
 
@@ -524,7 +518,7 @@ footer {
 
 #fb-competitive {
   display: inline-block;
-  background-color: #211c36;
+  background-color: #361d42;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -558,7 +552,7 @@ footer {
 
 #fb-inspiration {
   display: inline-block;
-  background-color: #211c36;
+  background-color: #361d42;
   width: 100%;
 }
 
@@ -635,7 +629,7 @@ footer {
   width: 100%;
   max-width: 150px;
   height: auto;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 
 #bz-intro img {
@@ -661,12 +655,14 @@ footer {
 #bz-menu ul > li > a:hover,
 #bz-menu ul > li > a:focus,
 #bz-menu ul > li > a:active {
-  color: #c5470d;
+  color: #fff;
+  text-shadow: 3px 3px #000;
   text-decoration: none;
 }
 
 #bz-menu ul > li > a:active {
-  color: #c5470d;
+  color: #fff;
+  text-shadow: 3px 3px #000;
 }
 
 #bz-challenge a,
@@ -738,6 +734,7 @@ footer {
 #pw-menu ul > li > a:focus,
 #pw-menu ul > li > a:active {
   color: #fff;
+  text-shadow: 3px 3px #000;
   text-decoration: none;
 }
 
@@ -989,11 +986,6 @@ footer {
     padding: 0;
   }
 
-  .profile-pic {
-    text-align: center;
-    padding-top: 40px;
-  }
-
   #about .col-md-12 {
     width: 100%;
   }
@@ -1011,10 +1003,6 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-  }
-
-  #about .skills .col-md-12 {
-    margin-right: 60px;
   }
 
   /* ------------ Flashback ------------ */
@@ -1089,11 +1077,17 @@ footer {
   }
 
   /* ------------ Bazaar ------------ */
+  #bz-intro .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+
   #bz-intro svg {
     width: 100%;
-    max-width: 160px;
+    max-width: 200px;
     height: auto;
-    margin-bottom: -20px;
   }
 
   #bz-intro img {
@@ -1216,7 +1210,7 @@ footer {
   }
 
   #pw-user-story .high-fid img {
-    width: 70%;
+    width: 80%;
   }
 
   #pw-user-testing .row {
@@ -1369,7 +1363,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #about .row .skills {
@@ -1380,16 +1374,6 @@ footer {
     justify-content: flex-end;
     padding-left: 20px;
     padding-right: 0;
-  }
-
-  #about .header h2 {
-    margin-bottom: 9px;
-    margin-left: 38px;
-  }
-
-  #about .container .header {
-    margin-top: 0;
-    margin-left: 60px;
   }
 
   #about .col-lg-7 {
