@@ -864,7 +864,7 @@ footer {
   nav > ul > li {
     display: inline-block;
     margin-bottom: 4px;
-    min-width: 80px;
+    min-width: 100px;
   }
 
   nav > ul > li > a,
