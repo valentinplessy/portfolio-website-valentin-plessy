@@ -747,12 +747,12 @@ footer {
   margin: 40px 0 20px;
 }
 
-#pw-user-story img {
-  margin-bottom: 10px;
+#pw-user-story .container .high-fid {
+  margin-top: 20px;
 }
 
-#pw-user-story .high-fid {
-  margin-top: 20px;
+#pw-user-story img {
+  margin-bottom: 10px;
 }
 
 #pw-user-testing .row {
@@ -1168,6 +1168,16 @@ footer {
 
   #pw-process img {
     padding: 40px 0;
+  }
+
+  #pw-user-story .container .high-fid {
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #pw-user-story .high-fid img {
+    width: 70%;
   }
 
   #pw-user-testing .row {
