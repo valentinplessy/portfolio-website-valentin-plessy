@@ -120,15 +120,16 @@ nav > ul > li > a:active {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: -6.8px;
+  top: -1px;
   font-size: 22px;
   padding-right: 0;
 }
 
 .navtoggle.responsive li {
   display: block;
-  margin-top: 10px;
-  transition: 0.4s;
+  text-align: right;
+  margin: 10px 10px 0 0;
+  transition: 0.2s;
 }
 
 .navtoggle.responsive li:last-child {
@@ -137,6 +138,44 @@ nav > ul > li > a:active {
 
 .nav-up {
   top: -220px;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
 }
 
 .logo {
