@@ -588,7 +588,7 @@ footer {
 
 #fb-retrospective {
   display: inline-block;
-  background-color: #211c36;
+  background-color: #361d42;
   width: 100%;
   padding-top: 20px;
 }
@@ -817,6 +817,80 @@ footer {
   margin-bottom: 0;
 }
 
+/* ------------ Let Them Eat Cake! ------------ */
+#ltec-intro {
+  display: inline-block;
+  text-align: center;
+  background-color: #ffe79e;
+  width: 100%;
+}
+
+#ltec-intro ul > li > a,
+#ltec-intro a:visited {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fa4c98;
+}
+
+#ltec-intro ul > li > a:hover,
+#ltec-intro ul > li > a:focus {
+  color: #7bd4d2;
+  text-shadow: 3px 3px #000;
+  text-decoration: none;
+}
+
+#ltec-intro ul > li > a:active {
+  color: #7bd4d2;
+  text-shadow: 3px 3px #000;
+  text-decoration: none;
+}
+
+#ltec-process,
+#ltec-moodboard,
+#ltec-responsive {
+  display: inline-block;
+  background-color: #ffe79e;
+  width: 100%;
+}
+
+#ltec .menu {
+  margin-top: 40px;
+}
+
+#ltec-challenge img {
+  margin-bottom: 20px;
+}
+
+#ltec-process img {
+  margin: 40px 0;
+}
+
+#ltec-process .column img {
+  display: block;
+  margin: 40px auto 10px;
+  width: 70%;
+}
+
+#ltec-process .column p {
+  display: inline-block;
+  text-align: center;
+}
+
+#ltec-wireframes img {
+  margin: 20px 0;
+}
+
+#ltec-moodboard img,
+#ltec-ui-elements img,
+#ltec-responsive img,
+#ltec-retrospective img {
+  margin: 40px 0 20px;
+}
+
+#ltec-ui-elements .icons {
+  margin-top: 40px;
+}
+
 /* ============================================================
                 Medium devices (640px and larger)
 =============================================================== */
@@ -956,7 +1030,7 @@ footer {
 
   .menu h3 {
     display: inline-block;
-    margin: 0 10px;
+    margin: 10px;
   }
 
   /* ------------ Index ------------ */
@@ -1245,6 +1319,20 @@ footer {
     margin: 40px 0;
     padding: 0 80px;
   }
+
+  /* ------------ Let Them Eat Cake! ------------ */
+  #ltec-challenge .row,
+  #ltec-wireframes .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
 }
 
 /* ============================================================
