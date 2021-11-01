@@ -119,7 +119,7 @@ nav > ul > li > a:active {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
+  right: -9px;
   top: -1px;
   font-size: 22px;
   padding-right: 0;
@@ -227,7 +227,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  margin-top: 37.75px;
+  margin-top: 42.23px;
 }
 
 #back-up-button {
@@ -865,6 +865,11 @@ footer {
   margin: 40px 0;
 }
 
+#ltec-process .col-md-6 img {
+  padding: 0 40px;
+  margin-bottom: 0;
+}
+
 #ltec-process .column img {
   display: block;
   margin: 40px auto 10px;
@@ -896,7 +901,7 @@ footer {
 =============================================================== */
 @media only screen and (min-width: 640px) {
   main {
-    margin-top: 57px;
+    margin-top: 72px;
   }
 
   body {
@@ -962,7 +967,7 @@ footer {
   }
 
   .section {
-    padding: 20px 0;
+    padding: 40px 0;
   }
 
   .container {
@@ -1150,6 +1155,13 @@ footer {
     margin: 0 9px;
   }
 
+  #fb-retrospective img {
+    position: relative;
+    width: 80%;
+    bottom: -40px;
+    left: -70px;
+  }
+
   /* ------------ Bazaar ------------ */
   #bz-intro .row {
     display: -webkit-box;
@@ -1159,14 +1171,16 @@ footer {
   }
 
   #bz-intro svg {
+    position: relative;
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
+    bottom: -39px;
   }
 
   #bz-intro img {
     position: relative;
-    bottom: -29px;
+    bottom: -49px;
     right: -30px;
     margin-bottom: 0;
   }
@@ -1215,7 +1229,7 @@ footer {
 
   #bz-testing .iteration {
     position: relative;
-    bottom: -49px;
+    bottom: -69px;
     margin-top: -90px;
   }
 
@@ -1312,7 +1326,7 @@ footer {
   }
 
   #pw-final-designs .final {
-    bottom: -29px;
+    bottom: -49px;
   }
 
   #pw-retrospective img {
@@ -1329,10 +1343,23 @@ footer {
     flex-direction: column;
   }
 
+  #ltec-process .row .col-md-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
 
+  #ltec-process .row .col-md-6 img {
+    width: 80%;
+    margin-bottom: 0;
+  }
 
-
-
+  #ltec-process .row .col-md-6 .caption {
+    width: 80%;
+  }
 }
 
 /* ============================================================
@@ -1340,7 +1367,7 @@ footer {
 =============================================================== */
 @media only screen and (min-width: 1024px) {
   main {
-    margin-top: 57px;
+    margin-top: 72px;
   }
 
   .section {
@@ -1551,14 +1578,14 @@ footer {
     margin-top: -20px;
     position: relative;
     bottom: -40px;
+    left: -110px;
   }
 
   /* ------------ Bazaar ------------ */
   #bz-intro svg {
     width: 100%;
-    max-width: 300px;
+    max-width: 220px;
     height: auto;
-    margin-bottom: -20px;
   }
 
   #bz-intro img {
@@ -1701,6 +1728,57 @@ footer {
   #pw-retrospective img {
     margin: 80px 0;
     padding: 0 200px;
+  }
+
+  /* ------------ Let Them Eat Cake! ------------ */
+  #ltec .col-lg-6 {
+    width: 50%;
+  }
+
+  #ltec-challenge .row,
+  #ltec-process .row,
+  #ltec-retrospective .row,
+  #ltec-moodboard .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  #ltec-challenge img {
+    margin-top: 40px;
+  }
+
+  #ltec-process .row .col-lg-6 p {
+    margin-top: 80px;
+  }
+
+  #ltec-process .row .col-lg-6 img {
+    width: 70%;
+    margin-top: 80px;
+  }
+
+  #ltec-wireframes .intro-2 {
+    width: 50%;
+  }
+
+  #ltec-wireframes .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #ltec-wireframes .low-fid img {
+    position: relative;
+    width: 110%;
+    left: -78px;
+  }
+
+  #ltec-wireframes .low-fid-text {
+    padding-right: 40px;
   }
 }
 
