@@ -267,21 +267,24 @@ main {
 
 /* ------------ Footer ------------ */
 footer {
-  text-align: center;
+  text-align: right;
   position: relative;
   width: 100%;
 }
 
 #contact {
   display: inline-block;
-  padding: 20px 0;
   width: 100%;
 }
 
 #contact svg {
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+#contact p {
+  margin-top: 10px;
 }
 
 .social {
@@ -340,6 +343,10 @@ footer {
 #work .column a:active,
 #work .column a:focus {
   text-decoration: none;
+}
+
+#work .column .empty {
+  padding: 0;
 }
 
 /* css animation */
@@ -405,6 +412,7 @@ footer {
 #about .container .header {
   margin-top: 40px;
 }
+
 
 /* ------------ Flashback ------------ */
 #flashback h1,
@@ -1359,6 +1367,7 @@ footer {
 
   #ltec-process .row .col-md-6 .caption {
     width: 80%;
+    margin-top: 0;
   }
 }
 
@@ -1757,6 +1766,7 @@ footer {
   #ltec-process .row .col-lg-6 img {
     width: 70%;
     margin-top: 80px;
+    margin-bottom: 0;
   }
 
   #ltec-wireframes .intro-2 {
