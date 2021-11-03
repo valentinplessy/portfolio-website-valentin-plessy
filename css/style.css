@@ -267,7 +267,7 @@ main {
 
 /* ------------ Footer ------------ */
 footer {
-  text-align: right;
+  text-align: center;
   position: relative;
   width: 100%;
 }
@@ -437,25 +437,25 @@ footer {
 
 /* animation */
 @keyframes flash-move {
-  from { transform: translate(-180px, 0); }
+  from { transform: translate(0, -150px); }
   to { transform: translate(0, 0); }
 }
 
 .flash-pink {
-  animation: 700ms flash-move ease-out;
+  animation: 700ms flash-move linear;
 }
 
 @keyframes back-move {
-  from { transform: translate(180px, 0); }
+  from { transform: translate(0, 150px); }
   to { transform: translate(0, 0); }
 }
 
 .back-blue {
-  animation: 700ms back-move ease-in;
+  animation: 700ms back-move linear;
 }
 
 #fb-intro {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 #fb-intro {
@@ -1094,26 +1094,26 @@ footer {
 
   /* ------------ Flashback ------------ */
   #fb-intro {
-    padding-top: 20px;
+    padding-top: 60px;
   }
 
   /* animation */
   @keyframes flash-move {
-    from { transform: translate(-300px, 0); }
+    from { transform: translate(0, -120px); }
     to { transform: translate(0, 0); }
   }
 
   .flash-pink {
-    animation: 700ms flash-move ease-out;
+    animation: 700ms flash-move linear;
   }
 
   @keyframes back-move {
-    from { transform: translate(300px, 0); }
+    from { transform: translate(0, 150px); }
     to { transform: translate(0, 0); }
   }
 
   .back-blue {
-    animation: 700ms back-move ease-in;
+    animation: 700ms back-move linear;
   }
 
   #fb-intro .row {
@@ -1464,6 +1464,13 @@ footer {
     transform: translateX(0);
   }
 
+  /* ------------ Footer ------------ */
+  footer {
+    text-align: right;
+    position: relative;
+    width: 100%;
+  }
+
   /* index */
   #hero p {
     margin-bottom: 40px;
@@ -1512,21 +1519,21 @@ footer {
 
   /* animation */
   @keyframes flash-move {
-    from { transform: translate(-700px, 0); }
+    from { transform: translate(0, -180px); }
     to { transform: translate(0, 0); }
   }
 
   .flash-pink {
-    animation: 1s flash-move ease-out;
+    animation: 1s flash-move linear;
   }
 
   @keyframes back-move {
-    from { transform: translate(700px, 0); }
+    from { transform: translate(0, 150px); }
     to { transform: translate(0, 0); }
   }
 
   .back-blue {
-    animation: 1s back-move ease-in;
+    animation: 1s back-move linear;
   }
 
   #fb-intro h3 {
