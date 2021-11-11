@@ -503,7 +503,8 @@ hr.solid {
 }
 
 #flashback .subnav-content a:hover,
-#flashback .subnav-content a:visited {
+#flashback .subnav-content a:visited,
+#flashback .subnav-content a:active {
   color: #ffdb1f;
   text-shadow: 3px 3px #fa4c98;
   text-decoration: none;
@@ -720,7 +721,8 @@ hr.solid {
 }
 
 #bazaar .subnav-content a:hover,
-#bazaar .subnav-content a:visited {
+#bazaar .subnav-content a:visited,
+#bazaar .subnav-content a:active {
   color: #000;
   text-shadow: 3px 3px #fff;
   text-decoration: none;
